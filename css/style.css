@@ -59,6 +59,9 @@ nav {
     left: 0;
 }
 
+.nav ul {
+    margin-top: 48px;
+}
 .nav ul :link {
     text-decoration: none;
 }
@@ -71,6 +74,10 @@ nav {
 
 .nav-first-three, .nav-second-three {
     margin-bottom: 63px;
+}
+
+nav .logo__img {
+    margin-top: 24px;
 }
 
 li img {
@@ -113,4 +120,41 @@ a:visited {
 
 body {
     background-color:#111220;
+}
+
+/*footer*/
+
+.footer-container {
+    display: flex;
+    flex-direction:column;
+    font-family: 'Roboto';
+    background-color:#111220;
+}
+
+footer h4 {
+    text-align: center;
+    margin: auto;
+    margin-top: 24px;
+}
+
+footer h5 {
+    text-align: center;
+    margin: auto;
+    margin-top: 24px;
+    font-weight: 400;
+}
+
+footer ul {
+    display:grid;
+    grid-template-columns: 24px 24px 24px;
+    list-style:none; 
+    font-size: 14px;
+    font-weight:100;
+
+}
+
+footer img {
+    width: 202px;
+    margin: auto;
+    margin-top: 24px;
 }
