@@ -226,3 +226,13 @@ footer img {
 .videosHead {
 
 }
+
+/*forum page*/
+.postContainer {
+    background-color:#252747
+}
+
+.postContainer button {
+    background-color: transparent;
+    border:none;
+}
