@@ -241,3 +241,20 @@ footer img {
     background-color: transparent;
     border:none;
 }
+
+/*news page*/
+
+/*account page*/
+
+.dailyRating, .rapidRating, .blitzRating, .bulletRating, .lessonsRating, .puzzlesRating {
+    background-color:#282547;
+}
+
+.recentGames {
+    background-color:#080912;
+}
+
+.viewAll {
+    background-color: transparent;
+    color: #ffff;
+}
