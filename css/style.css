@@ -221,11 +221,18 @@ footer img {
     margin-bottom: 24px;
 }
 
+/*home page*/
+
+.gameButtons button {
+    background-color:#252747;
+}
+
+.viewPostButton {
+    background-color
+}
+
 /*videos and tutorials page*/
 
-.videosHead {
-
-}
 
 /*forum page*/
 .postContainer {
