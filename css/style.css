@@ -265,3 +265,9 @@ footer img {
     background-color: transparent;
     color: #ffff;
 }
+
+/*friends page*/
+
+.rightSideUp, .topDawg, .twelveDuck, .maryProfile {
+    background-color: #252747;
+}
