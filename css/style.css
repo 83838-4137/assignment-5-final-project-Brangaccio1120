@@ -271,3 +271,13 @@ footer img {
 .rightSideUp, .topDawg, .twelveDuck, .maryProfile {
     background-color: #252747;
 }
+
+/*forum post page*/
+
+.mainPost, .response {
+    background-color: #252747;
+}
+
+.subResponse {
+    background-color: #161834;
+}
