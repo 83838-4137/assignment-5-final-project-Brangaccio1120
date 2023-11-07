@@ -23,6 +23,8 @@ body {
     align-items: center;
     text-align: center;
     width: 100%;
+    position:sticky;
+    top: 0;
 }
 
 .nav-items {
@@ -225,10 +227,121 @@ footer img {
 
 .gameButtons button {
     background-color:#252747;
+    width: 131.58px;
+    height: 105px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+}
+
+.gameButtons {
+    display: grid;
+    grid-template-columns: 193.58px 129px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.dailyGame img {
+    width: 54.50px;
+    margin: auto;
+}
+
+.rapidGame img {
+    width: 63px;
+}
+
+.blitzGame img{
+    width: 40.76px;
+}
+
+.bulletGame img{
+    width: 81.48px;
+}
+
+.lessonsGame img {
+    width: 42px
+}
+
+.puzzlesGame img{
+    width: 63px;
+}
+
+.gameButtons p {
+    text-align: center;
 }
 
 .viewPostButton {
     background-color
+}
+
+.friendBot {
+    margin: 51px 0 45px 0;
+    text-align: center;
+}
+
+.playFriend {
+    background: transparent;
+    outline: #8BEEDD solid 3px;
+    width: 145px;
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+    color: #8BEEDD;
+    font-size: 16px;
+}
+
+.playFriend img {
+    width: 23.18px;
+    height: 23.18px
+}
+
+.playBot {
+    background: transparent;
+    outline: #8BEEDD solid 3px;
+    width: 145px;
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+    color: #8BEEDD;
+    font-size: 16px;
+}
+
+.playBot img {
+    width: 27px;
+}
+
+.recentGames h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.recentGames button {
+    background: transparent;
+    width: 145px;
+    height: 44px;
+    border: none;
+    color: #ffff;
+    font-size: 20px;
+}
+
+.viewAll {
+    text-align:center;
+}
+
+.recVid {
+    margin-top: 43px;
+}
+
+.recVid h3 {
+    text-align:center;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.beatRuyVid img {
+    text-align: center;
 }
 
 /*videos and tutorials page*/
@@ -259,6 +372,8 @@ footer img {
 
 .recentGames {
     background-color:#080912;
+    padding-top: 46px;
+    padding-bottom: 38px;
 }
 
 .viewAll {
