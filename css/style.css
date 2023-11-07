@@ -416,8 +416,36 @@ footer img {
 
 /*account page*/
 
+
+
+.accountButtons button {
+    background: transparent;
+    outline: #8BEEDD solid 3px;
+    width: 145px;
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+    color: #8BEEDD;
+    font-size: 16px;
+}
+
+.accountButtons {
+    margin-bottom: 17px;
+}
+
+.accountRatings {
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 190px 166px;
+    margin-bottom: 41px
+}
+
 .dailyRating, .rapidRating, .blitzRating, .bulletRating, .lessonsRating, .puzzlesRating {
     background-color:#282547;
+    border-radius: 5px;
+    width: 169px;
+    margin-bottom: 17px;
 }
 
 .recentGames {
@@ -433,9 +461,17 @@ footer img {
 
 /*friends page*/
 
+.friendHeader {
+    text-align: center;
+}
+
 .rightSideUp, .topDawg, .twelveDuck, .maryProfile {
     background-color: #252747;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
+
+
 
 /*forum post page*/
 
