@@ -341,7 +341,35 @@ footer img {
 }
 
 .beatRuyVid img {
-    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.trendingContainer {
+    background-color: #252747;
+    border-radius: 13px;
+    margin: 0 16px 0 16px;
+    height: 276px;
+    margin-bottom: 41px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-top: 1px;
+}
+
+.trendingContainer h2 {
+    color:#8BEEDD
+}
+
+.viewPostButton button {
+    background: transparent;
+    outline: #8BEEDD solid 3px;
+    width: 145px;
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+    color: #8BEEDD;
+    font-size: 16px;
 }
 
 /*videos and tutorials page*/
@@ -350,6 +378,26 @@ footer img {
 /*forum page*/
 .postContainer {
     background-color: #252747;
+    width: 358px;
+    height: 255px;
+    border-radius: 13px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.forumHeader {
+    text-align: center;
+}
+
+.forumTopButtons {
+    text-align: center;
+}
+
+.likeDislike {
+    display: grid;
+    grid-template-columns: 70px 70px 25px;
 }
 
 .postContainer button {
@@ -361,6 +409,8 @@ footer img {
     background-color: transparent;
     border:none;
 }
+
+
 
 /*news page*/
 
