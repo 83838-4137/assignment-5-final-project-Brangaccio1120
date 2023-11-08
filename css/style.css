@@ -370,6 +370,10 @@ footer img {
 
 /*videos and tutorials page*/
 
+.videosHead {
+    text-align: center;
+}
+
 .searchContainer {
     width: 302px;
     height: 44px;
@@ -383,6 +387,9 @@ input {
     background-color: transparent;
     border: none;
     font-size: 20px;
+    align-items: center;
+    margin: auto;
+    outline: none;
 }
 
 .search-bar {
@@ -401,6 +408,7 @@ input {
     border-bottom-right-radius: 5px;
     height: 44px;
     width: 68px;
+    margin-left: 18px;
 }
 
 .vidButtons button {
