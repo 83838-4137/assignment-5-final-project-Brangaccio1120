@@ -272,10 +272,6 @@ footer img {
     text-align: center;
 }
 
-.viewPostButton {
-    background-color;
-}
-
 .friendBot {
     margin: 51px 0 45px 0;
     text-align: center;
@@ -374,6 +370,51 @@ footer img {
 
 /*videos and tutorials page*/
 
+.searchContainer {
+    width: 302px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 49px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.search-bar {
+    width: 307px;
+    max-width: 400px;
+    background: #D9D9D9;
+    height: 44px;
+    border-radius: 5px;
+}
+
+.searchContainer button {
+    background-color: #080912;
+    outline: none;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 44px;
+    width: 68px;
+}
+
+.vidButtons button {
+    height:44px;
+    width: 78px;
+    background-color: #252747;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 49px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: bold;
+}
 
 /*forum page*/
 .postContainer {
@@ -418,6 +459,10 @@ footer img {
 
 
 /*news page*/
+
+.overlay a {
+    text-decoration: none;
+}
 
 /*account page*/
 
@@ -468,6 +513,7 @@ footer img {
 
 .friendHeader {
     text-align: center;
+    font-size: 25px;
 }
 
 .rightSideUp, .topDawg, .twelveDuck, .maryProfile {
@@ -475,8 +521,6 @@ footer img {
     margin-bottom: 20px;
     border-radius: 8px;
 }
-
-
 
 /*forum post page*/
 
