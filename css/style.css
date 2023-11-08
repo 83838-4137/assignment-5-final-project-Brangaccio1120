@@ -273,7 +273,7 @@ footer img {
 }
 
 .viewPostButton {
-    background-color
+    background-color;
 }
 
 .friendBot {
@@ -406,6 +406,11 @@ footer img {
 }
 
 .createButton {
+    background-color: transparent;
+    border:none;
+}
+
+.categoryButton {
     background-color: transparent;
     border:none;
 }
