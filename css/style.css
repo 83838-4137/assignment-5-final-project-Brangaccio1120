@@ -474,7 +474,9 @@ input {
 
 /*account page*/
 
-
+.accountSection img {
+    margin-top: 68px;
+}
 
 .accountButtons button {
     background: transparent;
