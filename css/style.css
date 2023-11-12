@@ -275,6 +275,8 @@ footer img {
 .friendBot {
     margin: 51px 0 45px 0;
     text-align: center;
+    justify-content:center;
+    display:flex;
 }
 
 .playFriend {
@@ -286,6 +288,7 @@ footer img {
     border-radius: 5px;
     color: #8BEEDD;
     font-size: 16px;
+    margin-right: 13px;
 }
 
 .playFriend img {
@@ -302,6 +305,7 @@ footer img {
     border-radius: 5px;
     color: #8BEEDD;
     font-size: 16px;
+    margin-left: 13px;
 }
 
 .playBot img {
@@ -327,18 +331,26 @@ footer img {
 }
 
 .recVid {
+    display: flex;
+    flex-direction: column;
     margin-top: 43px;
 }
 
-.recVid h3 {
+.beatRuyVid {
+    display: flex;
+    flex-direction: column;
+}
+
+.recVidTitle {
     text-align:center;
     font-size: 21px;
     font-weight: bold;
 }
 
 .beatRuyVid img {
-    display: block;
+    justify-content: center;
     margin: auto;
+    display:flex;
 }
 
 .trendingContainer {
@@ -546,7 +558,11 @@ input  {
     border:none;
 }
 
-
+.recChallenges {
+    display: grid;
+    grid-template-columns: 122px 122px 113px;
+    justify-content:center;
+}
 
 /*news page*/
 
