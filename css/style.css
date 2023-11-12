@@ -334,6 +334,7 @@ footer img {
     display: flex;
     flex-direction: column;
     margin-top: 43px;
+    align-items:center;
 }
 
 .beatRuyVid {
@@ -523,11 +524,13 @@ input  {
 
 .forumHeader {
     text-align: center;
+    font-size: 24px;
 }
 
 .forumTopButtons {
     text-align: center;
     margin-bottom: 16px;
+    margin-top: 21px;
 }
 
 .categoryButton {
@@ -572,6 +575,13 @@ input  {
 
 /*account page*/
 
+.accountSection {
+    display: grid;
+    grid-template-columns: 104px 180px;
+    margin-bottom: 33px;
+    justify-content: center;
+}
+
 .accountSection img {
     margin-top: 68px;
 }
@@ -588,7 +598,17 @@ input  {
 }
 
 .accountButtons {
-    margin-bottom: 17px;
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.accountButtons .help {
+    margin-right: 12.5px;
+}
+
+.accountButtons .settings {
+    margin-left: 12.5px;
 }
 
 .accountRatings {
@@ -603,13 +623,31 @@ input  {
     background-color:#282547;
     border-radius: 5px;
     width: 169px;
+    height: 57px;
     margin-bottom: 17px;
+    display: grid;
+    grid-template-columns: 61px 104px;
 }
+
+.dailyRating img, .rapidRating img, .blitzRating img, .bulletRating img,.lessonsRating img, .puzzlesRating img{
+    display:block;
+    margin-top: 6px;
+    margin-left: 8px;
+    justify-content: center;
+}
+
+
 
 .recentGames {
     background-color:#080912;
     padding-top: 46px;
     padding-bottom: 38px;
+}
+
+.tamaraGame img, .piperGame img, .carterGame img {
+    display:block;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 .viewAll {
@@ -624,10 +662,14 @@ input  {
     font-size: 25px;
 }
 
-.rightSideUp, .topDawg, .twelveDuck, .maryProfile {
+.topAccount {
     background-color: #252747;
     margin-bottom: 20px;
     border-radius: 8px;
+}
+
+.rightSideUp, .topDawg, .twelveDuck, .maryProfile {
+    
 }
 
 /*forum post page*/
