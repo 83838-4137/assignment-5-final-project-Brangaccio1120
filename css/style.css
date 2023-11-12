@@ -573,6 +573,9 @@ input  {
     text-decoration: none;
 }
 
+.newsstories {
+
+}
 /*account page*/
 
 .accountSection {
@@ -662,7 +665,7 @@ input  {
     font-size: 25px;
 }
 
-.topAccount {
+.account {
     background-color: #252747;
     margin-bottom: 20px;
     border-radius: 8px;
