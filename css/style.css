@@ -426,6 +426,48 @@ input  {
     margin-left: 18px;
 }
 
+.vidInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.secondary-vid-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.vidpfp {
+    width: 44px;
+}
+
+.by-and-view {
+    display: flex;
+    flex-direction:  row;
+}
+
+.video-title {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.content-creator {
+    font-size: 15px;
+    margin-top: 1px;
+    margin-right: 11px;
+}
+
+.video-views {
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.thumbnail {
+    margin-bottom: 9px;
+}
+
 .vidButtons {
     margin-top: 49px;
     display:flex;
@@ -478,6 +520,10 @@ input  {
     justify-content: center;
     margin: auto;
     display:flex;
+}
+
+.dutchVid, .londonVid, .ruyVid, .stockfishVid, .kidVid, .mosquitoVid {
+    margin-bottom: 38px;
 }
 
 .londonVid .thumbnail img{
@@ -573,8 +619,26 @@ input  {
     text-decoration: none;
 }
 
-.newsstories {
+.newsHeader {
+    text-align: center;
+    margin-bottom: 39px;
+    margin-top: 39px;
+}
 
+.newsHeader h3 {
+    size: 24px;
+    font-weight: bold;
+}
+
+.newsstories {
+    margin-top: 53px;
+}
+
+.newsstories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /*account page*/
 
