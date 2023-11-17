@@ -691,6 +691,16 @@ input  {
     text-decoration: none;
 }
 
+.overlay .news-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.overlay .newsName {
+    font-size: 18px;
+    font-weight: 400px;
+}
+
 .newsHeader {
     text-align: center;
     margin-bottom: 39px;
@@ -716,7 +726,7 @@ input  {
 
 .accountSection {
     display: grid;
-    grid-template-columns: 104px 180px;
+    grid-template-columns: 65px 281px;
     margin-bottom: 33px;
     justify-content: center;
 }
@@ -735,6 +745,31 @@ input  {
     color: #8BEEDD;
     font-size: 16px;
     font-weight: 600;
+}
+
+.youraccountinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.youraccountinfo h1 {
+    margin-top:58px;
+    font-size: 32px;
+    margin-bottom: -8px;
+}
+
+.youraccountinfo .joined {
+    margin-top: 12px;
+    font-size: 16px;
+    margin-bottom: 0px
+}
+
+.games-played {
+    font-size: 16px;
+    margin-top: 7px;
+
 }
 
 .accountButtons button:hover {
@@ -761,7 +796,8 @@ input  {
     justify-content: center;
     display: grid;
     grid-template-columns: 190px 166px;
-    margin-bottom: 41px
+    margin-bottom: 41px;
+    margin-top: 6px;
 }
 
 .dailyRating, .rapidRating, .blitzRating, .bulletRating, .lessonsRating, .puzzlesRating {
