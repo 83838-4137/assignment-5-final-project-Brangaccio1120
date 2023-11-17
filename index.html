@@ -19,31 +19,31 @@
                 <div class="bars"></div>
             </div>
             <h1 class="logo">
-                <a href="#"><img src="images/onechess-logo-12.svg" alt="one chess logo" class="logo__img"></a>
+                <a href="index.html"><img src="images/onechess-logo-12.svg" alt="one chess logo" class="logo__img"></a>
             </h1>
             <h2 class="friends"><a href="friends.html"><img src="images/friends.svg" alt="friends icon"></a>
             </h2>
             <nav class="nav">
-                <img src="images/onechess-logo-12.svg" class="logo__img" alt="one chess logo">
+                <a href="index.html"><img src="images/onechess-logo-12.svg" class="logo__img" alt="one chess logo"></a>
                 <div class="sepLineLogo"></div>
                 <ul>
                     <!--I'm separating my links into three lists because that's how they are separated in my figma file-->
                 <div class="nav-first-three">
-                    <li><img src="images/online-games.svg" alt="online games icon"><a href="#">Online Games</a></li>
-                    <li><img src="images/bot-games.svg" alt="bot games icon"><a href="#">Bot Games</a></li>
+                    <li><img src="images/online-games.svg" alt="online games icon"><a href="#"><div class="nav-link-text">Online Games</div></a></li>
+                    <li class="bot-game-list"><img src="images/bot-games.svg" alt="bot games icon"><a href="#">Bot Games</a></li>
                     <li><img src="images/puzzles.svg" alt="puzzles icon"><a href="#">Puzzles</a></li>
                 </div>
                 <div class="sepLinesHamburger"></div>
                 <div class="nav-second-three">
                     <li><img src="images/videos-tab.svg" alt="videos tab icon"><a href="videos-and-tutorials.html">Videos</a></li> 
-                    <li><img src="images/forums-tab.svg" alt="forums tab icon"><a href="forums.html">Forums</a></li>
+                    <li><img src="images/forums-tab.svg" alt="forums tab icon"><a href="forums.html"><div class="nav-link-text"></div>Forums</a></li>
                     <li><img src="images/news-tab.svg" alt="new tab icon"><a href="news.html">News</a></li>
                 </div>
                 <div class="sepLinesHamburger"></div>
                 <div class="nav-third-three">
                     <li><img src="images/account-icon.svg" alt="account icon"><a href="account.html">Account</a></li> 
-                    <li><img src="images/help-circle.svg" alt="help icon"><a href="#">Help</a></li>   
-                    <li><img src="images/sign-out.svg" alt="sign out icon"><a href="#">Sign Out</a></li> 
+                    <li class="help-list"><img src="images/help-circle.svg" alt="help icon"><a href="#">Help</a></li> 
+                    <li class="sign-out-list"><img src="images/sign-out.svg" alt="sign out icon"><a href="#">Sign Out</a></li> 
                 </div>
                 </ul>
             </nav>
@@ -53,22 +53,22 @@
     <script src="script.js"></script>
 
     <section class="gameButtons">
-        <div class="dailyGame"><button type="button"><img src="images/game-logos/daily-chess-logo.svg" alt="daily games icon"></button><p>daily</p></div>
+        <div class="dailyGame"><button type="button"><img src="images/game-logos/daily-chess-logo.svg" alt="daily games icon"></button><p>Daily</p></div>
 
-        <div class="rapidGame"><button type="button"><img src="images/game-logos/rapid-chess-logo.svg" alt="rapid games icon"></button><p>rapid</p></div>
+        <div class="rapidGame"><button type="button"><img src="images/game-logos/rapid-chess-logo.svg" alt="rapid games icon"></button><p>Rapid</p></div>
 
-        <div class="blitzGame"><button type="button"><img src="images/game-logos/blitx-chess-logo.svg" alt="blitz game icon"></button><p>blitz</p></div>
+        <div class="blitzGame"><button type="button"><img src="images/game-logos/blitx-chess-logo.svg" alt="blitz game icon"></button><p>Blitz</p></div>
 
-        <div class="bulletGame"><button type="button"><img src="images/game-logos/bullet-chess-logo.svg" alt="bullet game icon"></button><p>bullet</p></div>
+        <div class="bulletGame"><button type="button"><img src="images/game-logos/bullet-chess-logo.svg" alt="bullet game icon"></button><p>Bullet</p></div>
 
-        <div class="lessonsGame"><button  type="button"><img src="images/game-logos/lessons-chess-logo.svg"></button><p>lessons</p></div>
+        <div class="lessonsGame"><button  type="button"><img src="images/game-logos/lessons-chess-logo.svg"></button><p>Lessons</p></div>
 
-        <div class="puzzlesGame"><button type="button"><img src="images/game-logos/puzzles-chess-logo.svg" alt="puzzles icon"></button><p>puzzles</p></div>
+        <div class="puzzlesGame"><button type="button"><img src="images/game-logos/puzzles-chess-logo.svg" alt="puzzles icon"></button><p>Puzzles</p></div>
 
     </section>
 
     <section class="friendBot">
-    <button class="playFriend"><img src="images/play-friend.svg" alt="play friend icon">Play Friend</button>
+    <div class="friend-button-items"><button class="playFriend"><img src="images/play-friend.svg" alt="play friend icon">Play Friend</button></div>
     <button class="playBot"><img src="images/bot-games.svg" alt="play bot icon">Play Bot</button>
     </section>
 
@@ -87,11 +87,13 @@
     
     <section class="recVid">
         
-        <div class="beatRuyVid"><a href="#"><img src="images/mobile-videos/how-to-beat-ruy.png" alt="how to beat the ruy lopez video thumbnail"></a></div>
-        <div class="vidAccount"><img class="pawnPFP" src="images/creator-pfp/pawnstar-pfp.png" alt="video creator thumbnail">        
-            <h5>How to Beat the Ruy Lopez</h5>
-            <div class="by+view"><h6>By: Pawnstar</h6>
-            <p>3k views</p></div>
+            <div class="beatRuyVid"><a href="#"><div class="thumbnail"><img src="images/mobile-videos/how-to-beat-ruy.png" alt="how to beat the ruy lopez video thumbnail"></a></div>
+            <div class="vidInfo"><div class="vidpfp"><img src="images/creator-pfp/pawnstar-pfp.png" alt="video creator thumbnail"></div>
+            <div class="secondary-vid-info">
+            <p class="video-title">How to Beat the Ruy Lopez</p>
+            <div class="by-and-view"><p class="content-creator">By: Pawnstar</p>
+            <p class="video-views">145 views</p></div>
+            </div></div>
             </div>
         </section>
 
@@ -99,10 +101,10 @@
     
     <div class="trendingPost">
         <div class="trendingContainer">
-            <h2>Trending Post</h2>
-            <h4>Chess_Brother</h4>
-            <h3>Perhaps my best queen sacrifice</h3>
-            <p>I usually blunder the queen and call it a sacrifice, but this time, it led me to a brutal mate in 3. </p>
+            <p class="trending-post-heading">Trending Post</p>
+            <p class="trending-user">Chess_Brother</p>
+            <p class="trending-title">Perhaps my best queen sacrifice</p>
+            <p class="trending-post-text">I usually blunder the queen and call it a sacrifice, but this time, it led me to a brutal mate in 3. </p>
             <div class="viewPostButton"><a href="forum-post.html"><button >View Post</button></div></a>
     </div>
     </div>

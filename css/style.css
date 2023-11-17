@@ -44,6 +44,10 @@ body {
     width: 113px;
 }
 
+.friends:hover {
+    color: gray;
+}
+
 /*hamburger content*/
 
 nav {
@@ -102,6 +106,15 @@ li img {
     margin-right: 40px;
     float:left;
     padding-left: 35px;
+    text-align:center;
+}
+
+.bot-game-list img{
+    margin-right: 34px;
+}
+
+.help-list img, .sign-out-list img {
+    margin-right: 34px;
 }
 
 .sepLineLogo {
@@ -235,9 +248,19 @@ footer img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
 }
 
+.gameButtons button:hover {
+    background-color: #191b39;
+}
+
+.dailyGame, .rapidGame, .blitzGame, .bulletGame, .lessonsGame, .puzzlesGame {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
 .gameButtons {
     display: grid;
-    grid-template-columns: 193.58px 129px;
+    grid-template-columns: 200px 200px;
     align-items: center;
     justify-content: center;
     margin-top: 35px;
@@ -270,6 +293,7 @@ footer img {
 
 .gameButtons p {
     text-align: center;
+    font-weight: bold;
 }
 
 .friendBot {
@@ -358,7 +382,7 @@ footer img {
     background-color: #252747;
     border-radius: 13px;
     margin: 0 16px 0 16px;
-    height: 276px;
+    height: 267px;
     margin-bottom: 41px;
     padding-left: 25px;
     padding-right: 25px;
@@ -366,8 +390,32 @@ footer img {
     padding-top: 1px;
 }
 
-.trendingContainer h2 {
-    color:#8BEEDD
+.trending-post-heading {
+    color:#8BEEDD;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:21px;
+}
+
+.trending-user {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom:0;
+}
+
+.trending-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #DEDEDE;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.trending-post-text {
+    margin-top: 7px; 
+    font-size: 16px;
+    color: #DEDEDE;
+    margin-bottom: 0;
 }
 
 .viewPostButton button {
@@ -379,6 +427,13 @@ footer img {
     border-radius: 5px;
     color: #8BEEDD;
     font-size: 16px;
+    margin-top: 32px;
+    font-weight: bold;
+}
+
+.viewPostButton button:hover {
+    background-color: #8BEEDD;
+    color: #252747;
 }
 
 /*videos and tutorials page*/
@@ -501,6 +556,23 @@ input  {
     margin-left: 8px;
     margin-right: 8px;
 } 
+
+.vidButtons .forYou:focus {
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color:#080912;
+}
+
+.vidButtons .live:focus {
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color:#080912;
+}
+
+.vidButtons .sort:focus {
+    margin-left: 8px;
+    background-color:#080912;
+}
 
 .vidButtons .live img {
     margin-right: 4px;
@@ -662,6 +734,12 @@ input  {
     border-radius: 5px;
     color: #8BEEDD;
     font-size: 16px;
+    font-weight: 600;
+}
+
+.accountButtons button:hover {
+    background-color:#8BEEDD;
+    color: #111220;
 }
 
 .accountButtons {
@@ -743,8 +821,37 @@ input  {
 
 .mainPost, .response {
     background-color: #252747;
+    width: 358px;
+    height: 255px;
+    border-radius: 13px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 35px;
 }
 
 .subResponse {
     background-color: #161834;
+    width: 358px;
+    height: 255px;
+    border-radius: 13px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.subResponse button {
+    background-color: transparent;
+    border: none;
+}
+
+.mainPost button {
+    background-color: transparent;
+    border: none;
+}
+
+.response button {
+    background-color: transparent;
+    border: none;
 }
