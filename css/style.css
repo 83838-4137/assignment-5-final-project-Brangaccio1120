@@ -843,14 +843,45 @@ input  {
     font-size: 25px;
 }
 
-.account {
+.account1 {
     background-color: #252747;
     margin-bottom: 20px;
     border-radius: 8px;
+    height: 91px;
 }
 
-.rightSideUp, .topDawg, .twelveDuck, .maryProfile {
-    
+.account1 {
+    display: grid;
+    grid-template-columns: 89px 129px 76px;
+}
+
+.friendInfo {
+    margin: auto;
+}
+
+.rightSideUp {
+    margin: auto;
+}
+
+.msg-play {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.friends-play-icon {
+    margin-right: 25px;
+}
+
+.friendInfo h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.friendInfo h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /*forum post page*/
