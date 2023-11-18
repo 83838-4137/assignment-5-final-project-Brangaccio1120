@@ -151,37 +151,6 @@ a:visited {
     left: 69% !important;
 }
 
-/*media queries*/
-
-@media (max-width:450px) {
-    .nav {
-        transform: translateX(-100%)
-    }
-    
-    .logo {
-        margin: 0 66px 0 82px;
-    }
-}
-
-@media (min-width: 550px) {
-    .nav {
-        transform: translateX(-100%);
-        top: 167px;
-    }
-
-    .nav--toggle {
-        left: 37% !important;
-    }
-
-    .friends {
-        margin-left: 187px;
-    }
-
-    .bars {
-        margin-right: 241px;
-    }
-}
-
 /*body*/
 
 body {
@@ -921,4 +890,209 @@ input  {
 .response button {
     background-color: transparent;
     border: none;
+}
+
+/*media queries*/
+
+@media (max-width:450px) {
+    .nav {
+        transform: translateX(-100%)
+    }
+    
+    .logo {
+        margin: 0 66px 0 82px;
+    }
+}
+
+/*media query tablet*/
+
+@media (min-width: 750px) {
+
+    /*header and navigation*/
+    .flex-container {
+        display: flex;
+        background-color: #090B0E;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        position:sticky;
+        top: 0;
+    }
+    
+    .nav-items {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        margin-top: 71px;
+    }
+    
+    .logo {
+        text-align: center;
+    }
+    
+    
+    .logo__img {
+        width: 149px;
+    }
+    
+    .friends:hover {
+        color: gray;
+    }
+
+    /*tablet navigation */
+
+    .nav {
+        transform: translateX(-100%);
+        top: 167px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        background-color:#090B0E;
+        font-weight:800;
+        width: 543px;
+        font-size: 23px;
+        height: 817px;
+        position: fixed;
+        top: 150px;
+        left: 0;
+    }
+
+    .nav ul {
+        margin-top: 31px;
+        padding-left: 0;
+    }
+
+    .nav-first-three li {
+        margin-bottom: 40px;
+    }
+    
+    .nav-second-three li {
+        margin-bottom: 40px;
+    }
+    
+    .nav-third-three li {
+        margin-bottom: 40px;
+    }
+    
+    nav .logo__img {
+        margin-top: 24px;
+        display:block;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    
+    li img {
+        height: 34.48px;
+    }
+    
+    .sepLineLogo {
+        height: 6px;
+        margin-top: 35px;
+    }
+    
+    .sepLinesHamburger {
+        height: 6px;
+        margin-bottom: 35px;
+    }
+    
+    .bars {
+        background-color:#ffff;
+        width: 39px;
+        height: 4px;
+        margin: 8px 0;
+    }
+    
+    a:link {
+        color:white;
+    }
+
+    /*tablet home page*/
+
+    .nav--toggle {
+        left: 66% !important;
+    }
+
+    .friends {
+        margin-left: 187px;
+    }
+
+    .bars {
+        margin-right: 241px;
+    }
+
+    .gameButtons button {
+        width: 195.07px;
+        height: 155.67px;
+        font-size: 20px;
+    }
+
+    .gameButtons {
+        display: grid;
+        grid-template-columns: 200px 290px 200px;
+        margin-top: 100px;
+    }
+
+    .gameButtons p {
+        font-size:20px;
+        margin-bottom: 60px;
+    }
+
+    .dailyGame img {
+        width: 80.79px;
+    }
+    
+    .rapidGame img {
+        width: 93.4px;
+    }
+    
+    .blitzGame img{
+        width: 60.43px;
+    }
+    
+    .bulletGame img{
+        width: 120.8px;
+    }
+    
+    .lessonsGame img {
+        width: 62.27px
+    }
+    
+    .puzzlesGame img{
+        width: 93.4px;
+    }
+
+    .friendBot {
+        margin-bottom: 75px;
+        text-align: center;
+        justify-content:center;
+        display:flex;
+    }
+    
+    .playFriend {
+        outline: #8BEEDD solid 4px;
+        width: 167px;
+        height: 44px;
+        border: none;
+        border-radius: 5px;
+        color: #8BEEDD;
+        font-size: 16px;
+        margin-right: 18px;
+    }
+
+    
+    .playBot {
+        outline: #8BEEDD solid 4px;
+        width: 167px;
+        height: 44px;
+        font-size: 16px;
+        margin-left: 18px;
+    }
+    
+    .playBot img {
+        width: 27px;
+    }
+
 }
