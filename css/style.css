@@ -1362,25 +1362,23 @@ input  {
     /*tablet forum*/
 
     .postContainer {
-        background-color: #252747;
         width: 774px;
         height: 282px;
-        border-radius: 13px;
-        display: block;
-        margin: auto;
-        padding: 10px;
+        padding-top: 19x;
+        padding-right: 121px;
+        padding-left: 71px;
         margin-bottom: 35px;
     }
     
     .forumHeader {
-        text-align: center;
-        font-size: 24px;
+        margin-top: 88px;
+        margin-bottom: 52px;
     }
     
     .forumTopButtons {
         text-align: center;
-        margin-bottom: 16px;
-        margin-top: 21px;
+        margin-bottom: 76px;
+        margin-top: 56px;
     }
     
     .categoryButton {
@@ -1392,23 +1390,259 @@ input  {
     }
     
     .likeDislike {
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .like img {
+        width: 46.57px;
+    }
+
+    .dislike img {
+        width: 46.57px;
+    }
+
+    .comment img {
+        width: 46.57px;
+    }
+
+    .postContainer h4 {
+        font-size: 19px;
+    }
+
+    .postContainer h3 {
+        font-size: 21;
+    }
+
+    .postContainer p {
+        font-size: 20px;
+    }
+
+    /* tablet news */
+
+    .overlay a {
+        text-decoration: none;
+    }
+    
+    .overlay .news-title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .overlay .newsName {
+        font-size: 18px;
+        font-weight: 400px;
+    }
+    
+    .newsHeader {
+        text-align: center;
+        margin-bottom: 64px;
+        margin-top: 81px;
+    }
+    
+    .newsHeader h3 {
+        size: 24px;
+        font-weight: bold;
+    }
+    
+    .newsstories {
+        margin-top: 53px;
+    }
+    
+    .newsstories {
         display: grid;
-        grid-template-columns: 121px 121px 94px;
+        grid-template-columns: 403px 364px;
+        margin-top: 95px;
+    }
+
+    /*tablet account section */
+
+    .accountSection {
+        grid-template-columns: 108px 338px;
+        margin-top: 18px;
+        margin-bottom: 39px;
     }
     
-    .postContainer button {
-        background-color: transparent;
-        border:none;
+    .accountSection img {
+        margin-top: 68px;
+        width: 119.38px;
     }
     
-    .createButton {
-        background-color: transparent;
-        border:none;
+    .accountButtons button {
+        outline: #8BEEDD solid 4px;
+        width: 171.36px;
+        height: 44px;
     }
     
-    .categoryButton {
-        background-color: transparent;
-        border:none;
+    .youraccountinfo {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    .youraccountinfo h1 {
+        margin-top:58px;
+        font-size: 38px;
+        margin-bottom: -8px;
+    }
+    
+    .youraccountinfo .joined {
+        margin-top: 12px;
+        font-size: 20px;
+        margin-bottom: 0px
+    }
+    
+    .games-played {
+        font-size: 20px;
+        margin-top: 7px;
+    }
+    
+    .accountButtons {
+        margin-bottom: 62px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .accountButtons .help {
+        margin-right: 49.5px;
+        font-size: 20px;
+    }
+    
+    .accountButtons .settings {
+        margin-left: 49.5px;
+        font-size: 20px;
+    }
+    
+    .accountRatings {
+        grid-template-columns: 277px 233px;
+        margin-bottom: 41px;
+        margin-top: 6px;
+    }
+
+    .accountRatings p {
+        font-size: 20px;
+        margin: auto;
+    }
+    
+    .dailyRating, .rapidRating, .blitzRating, .bulletRating, .lessonsRating, .puzzlesRating {
+        width: 236.6px;
+        height: 79.8px;
+        margin-bottom: 40px;
+        grid-template-columns: 89px 120px;
+    }
+    
+    .dailyRating img, .rapidRating img, .blitzRating img, .bulletRating img,.lessonsRating img, .puzzlesRating img{
+        display:block;
+        margin-top: 6px;
+        margin-left: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dailyRating img {
+        width: 40.57px;
+    }
+
+    .rapidRating img {
+        width: 56.06px;
+    }
+
+    .blitzRating img {
+        width: 38.41px
+    }
+
+    .bulletRating img {
+        width: 74.7px;
+    }
+
+    .lessonsRating img {
+        width: 35.01px;
+    }
+
+    .puzzlesRating img {
+        width: 61.6px;
+    }
+    
+    
+    .recentGames {
+        font-size: 28px;
+        padding-top: 46px;
+        padding-bottom: 38px;
+    }
+    
+    .tamaraGame img, .piperGame img, .carterGame img {
+        display:block;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    
+    .viewAll {
+        font-weight: 200;
+    }
+
+    /*friends page*/
+
+    .friendHeader {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .friendsList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .account1 {
+        margin-bottom: 20px;
+        border-radius: 8px;
+        height: 185.28px;
+        width: 777px;
+        grid-template-columns: 188px 162px 489px;
+    }
+
+    .rightSideUp img {
+        width: 133.48px;
+    }
+    
+    .friendInfo {
+        margin: auto;
+    }
+    
+    .rightSideUp {
+        margin: auto;
+    }
+
+    
+    
+    .msg-play {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .friends-msg-icon img {
+        width: 69.73px;
+    }
+
+    .friends-play-icon img {
+        width: 69.73px;
+    }
+    
+    .friends-play-icon {
+        margin-right: 25px;
+    }
+    
+    .friendInfo h3 {
+        font-size: 25px;
+    }
+    
+    .friendInfo h4 {
+        font-size: 23px;
+        font-weight: 400;
     }
 
 }
