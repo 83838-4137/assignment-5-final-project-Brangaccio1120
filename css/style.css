@@ -284,6 +284,11 @@ footer img {
     margin-right: 13px;
 }
 
+.friend-button-items button:hover {
+    background: #8BEEDD;
+    color: #111220;
+}
+
 .playFriend img {
     width: 23.18px;
     height: 23.18px
@@ -403,6 +408,10 @@ footer img {
 .viewPostButton button:hover {
     background-color: #8BEEDD;
     color: #252747;
+}
+
+.chess-pawn {
+    display: none;
 }
 
 /*videos and tutorials page*/
@@ -612,6 +621,11 @@ input  {
     margin-bottom: 17px;
 }
 
+.loadMore:hover {
+    background: #8BEEDD;
+    color: #111220;
+}
+
 
 
 /*forum page*/
@@ -675,6 +689,8 @@ input  {
 
 .overlay a {
     text-decoration: none;
+    display: flex;
+    z-index: 1;
 }
 
 .overlay .news-title {
@@ -872,6 +888,47 @@ input  {
 
 /*forum post page*/
 
+.commentContainer {
+    width: 197px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 52px;
+    margin-top: 14px;
+}
+
+input  {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    margin: auto;
+    outline: none;
+    padding-left: 16px;
+}
+
+.comment-bar {
+    width: 307px;
+    max-width: 400px;
+    background: #D9D9D9;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.commentContainer button {
+    background-color: #252747;
+    outline: none;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 44px;
+    width: 59px;
+    margin-left: 18px;
+}
+
 .mainPost, .response {
     background-color: #252747;
     width: 358px;
@@ -881,6 +938,11 @@ input  {
     margin: auto;
     padding: 10px;
     margin-bottom: 35px;
+}
+
+.response .likeDislike {
+    display: flex;
+    justify-content:flex
 }
 
 .subResponse {
@@ -1645,4 +1707,27 @@ input  {
         font-weight: 400;
     }
 
+}
+
+/*desktop media query*/
+
+@media (min-width: 1030px) {
+
+    .flex-container {
+    height: 120px;
+    }
+
+    .nav-items {
+    margin-top: 16px;
+    }
+
+    .friends img{
+        width: 52px;
+    }
+
+    .bars {
+        width: 32px;
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
 }
