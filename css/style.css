@@ -271,7 +271,6 @@ footer img {
     margin: 51px 0 45px 0;
     text-align: center;
     justify-content:center;
-    display:flex;
 }
 
 .playFriend {
@@ -838,7 +837,6 @@ input  {
 
 .recent-game-container {
     display: flex;
-    flex-direction; column;
     justify-content: space-evenly;
     align-items: center;
     background-color: #282547;
@@ -1007,7 +1005,7 @@ input  {
 
 /*media queries*/
 
-@media (max-width:772px) {
+@media (max-width:767px) {
     .nav {
         transform: translateX(-100%)
     }
@@ -1019,7 +1017,7 @@ input  {
 
 /*media query tablet*/
 
-@media (min-width: 773px) {
+@media (min-width: 768px) {
 
     /*header and navigation*/
     .flex-container {
@@ -1122,6 +1120,40 @@ input  {
         color:white;
     }
 
+
+    /*tablet footer*/
+
+    footer h4 {
+        text-align: center;
+        margin: auto;
+        margin-top: 9px;
+        font-size: 20px;
+    }
+    
+    footer h5 {
+        text-align: center;
+        margin: auto;
+        margin-top: 24px;
+        font-size: 20px;
+    }
+    
+    .bottomlist {
+        grid-template-columns:104px 104px;
+        font-size: 18px;
+    }
+    
+    .toplist {
+        grid-template-columns: 95px 95px 138px;
+        font-size: 18px;
+    }
+    
+    footer img {
+        width: 431px;
+        margin: auto;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
     /*tablet home page*/
 
     .nav--toggle {
@@ -1188,6 +1220,11 @@ input  {
         justify-content:center;
         display:flex;
     }
+
+    .friendBot button {
+        width: 166px;
+        height: 50.37px;
+    }
     
     .playFriend {
         outline: #8BEEDD solid 4px;
@@ -1207,10 +1244,15 @@ input  {
         height: 44px;
         font-size: 16px;
         margin-left: 18px;
+        font-weight: bold;
+    }
+
+    .playFriend img {
+        width: 27px;
     }
     
     .playBot img {
-        width: 27px;
+        width: 31px;
     }
 
     .recentGames h3 {
@@ -1234,9 +1276,34 @@ input  {
         font-size: 23px;
     }
 
+    .beatRuyVid .thumbnail img {
+        width: 441px;
+        margin-bottom: 10px;
+    }
+
     .vidInfo {
         margin-top: 10px;
         margin-bottom: 40px;
+    }
+
+    .beatRuyVid .vidpfp {
+        width: 61px;
+    }
+
+    .beatRuyVid .vidpfp img {
+        width: 61px;
+    }
+
+    .secondary-vid-info .video-title  {
+        font-size: 20px;
+    }
+
+    .secondary-vid-info .content-creator {
+        font-size: 18px;
+    }
+
+    .secondary-vid-info .video-views {
+        font-size: 17px;
     }
 
     .trendingContainer {
@@ -1672,10 +1739,12 @@ input  {
         padding-bottom: 38px;
     }
     
-    .tamaraGame img, .piperGame img, .carterGame img {
-        display:block;
-        margin: auto;
-        margin-bottom: 30px;
+    .recent-game-thumb img {
+        width: 115px;
+    }
+
+    .win-loss-icon img {
+        width: 67px;
     }
     
     .viewAll {
