@@ -53,7 +53,19 @@ body {
 /*hamburger content*/
 
 nav {
-    transition:all 0.3s linear;
+    transition:all 0.3s ease-in-out;
+}
+
+.hamburgerMenu--toggle .bars:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburgerMenu--toggle .bars:nth-child(2) {
+    opacity:0;
+}
+
+.hamburgerMenu--toggle .bars:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
 }
 
 .nav {
@@ -138,6 +150,7 @@ li img {
     width: 24.72px;
     height: 4px;
     margin: 5.5px 0;
+    transition:all 0.3s ease-in-out;
 }
 
 a:link {
@@ -466,7 +479,7 @@ input  {
 .vidInfo {
     display: flex;
     flex-direction: row;
-    margin-bottom: 43px;
+    margin-bottom: 38px;
 }
 
 .secondary-vid-info {
@@ -575,10 +588,6 @@ input  {
     justify-content: center;
     margin: auto;
     display:flex;
-}
-
-.dutchVid, .londonVid, .ruyVid, .stockfishVid, .kidVid, .mosquitoVid {
-    margin-bottom: 38px;
 }
 
 .londonVid .thumbnail img{
@@ -808,7 +817,7 @@ input  {
     display: grid;
     grid-template-columns: 190px 166px;
     margin-bottom: 41px;
-    margin-top: 6px;
+    margin-top: 44px;
 }
 
 .dailyRating, .rapidRating, .blitzRating, .bulletRating, .lessonsRating, .puzzlesRating {
@@ -1026,6 +1035,19 @@ input  {
 @media (min-width: 768px)  {
 
     /*header and navigation*/
+
+    .hamburgerMenu--toggle .bars:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburgerMenu--toggle .bars:nth-child(2) {
+        opacity:0;
+    }
+    
+    .hamburgerMenu--toggle .bars:nth-child(3) {
+        transform: translateY(-16px) rotate(-45deg);
+    }
+
     .flex-container {
         display: flex;
         background-color: #090B0E;
@@ -1112,7 +1134,7 @@ input  {
     
     .sepLinesHamburger {
         height: 6px;
-        margin-bottom: 35px;
+        margin-bottom: 1px;
     }
     
     .bars {
@@ -1560,6 +1582,7 @@ input  {
     
     .createButton {
         margin-left: 141px;
+        width: 57px;
     }
     
     .likeDislike {
@@ -1691,7 +1714,7 @@ input  {
     .accountRatings {
         grid-template-columns: 277px 233px;
         margin-bottom: 41px;
-        margin-top: 6px;
+        margin-top: 62px;
     }
 
     .accountRatings p {
@@ -1825,6 +1848,18 @@ input  {
 /*desktop media query*/
 
 @media (min-width: 1030px) {
+
+    .hamburgerMenu--toggle .bars:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburgerMenu--toggle .bars:nth-child(2) {
+        opacity:0;
+    }
+    
+    .hamburgerMenu--toggle .bars:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
 
     .flex-container {
     height: 120px;
