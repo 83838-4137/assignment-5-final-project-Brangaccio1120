@@ -690,6 +690,10 @@ input  {
     justify-content:center;
 }
 
+.challengesHead {
+    text-align: center;
+}
+
 /*news page*/
 
 .overlay a {
