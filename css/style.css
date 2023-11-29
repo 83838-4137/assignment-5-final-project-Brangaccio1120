@@ -268,6 +268,8 @@ footer img {
 }
 
 .friendBot {
+    display: flex;
+    flex-direction: row;
     margin: 51px 0 45px 0;
     text-align: center;
     justify-content:center;
@@ -285,7 +287,7 @@ footer img {
     margin-right: 13px;
 }
 
-.friend-button-items button:hover {
+.friend-button-items button:hover,.bot-button-items button:hover {
     background: #8BEEDD;
     color: #111220;
 }
@@ -1017,7 +1019,7 @@ input  {
 
 /*media query tablet*/
 
-@media (min-width: 768px) {
+@media (min-width: 768px)  {
 
     /*header and navigation*/
     .flex-container {
@@ -1836,6 +1838,16 @@ input  {
         width: 32px;
         margin-bottom: 0px;
         margin-top: 5px;
+    }
+
+    /*desktop home page*/
+
+    .gameButtons {
+        display: grid;
+        justify-content: start;
+        grid-template-columns: 200px 290px 200px;
+        margin-top: 100px;
+        margin-left: 10%;
     }
 
 }
