@@ -852,7 +852,8 @@ input  {
     background-color: #282547;
     height: 66px;
     width: 100%;
-    max-width: 834px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
     border-radius: 5px;
 }
@@ -1015,6 +1016,42 @@ input  {
 
 /*media queries*/
 
+@media (max-width:375px) {
+    .nav {
+        width: 288px;
+        font-size: 16px;
+        height: 530px;
+    }
+    
+    .nav ul {
+        margin-top: 21px;
+    }
+    
+    .nav-first-three li {
+        margin-bottom: 20px;
+    }
+    
+    .nav-second-three li {
+        margin-bottom: 20px;
+    }
+    
+    .nav-third-three li {
+        margin-bottom: 20px;
+    }
+    
+    nav .logo__img {
+        width:100px;
+    }
+    
+    li img {
+        padding-left: 42px;
+    }
+
+    .sepLineLogo {
+        margin-top: 21px;
+    }
+}
+
 @media (max-width:767px) {
     .nav {
         transform: translateX(-100%)
@@ -1047,6 +1084,11 @@ input  {
     .hamburgerMenu--toggle .bars:nth-child(3) {
         transform: translateY(-16px) rotate(-45deg);
     }
+
+    .hamburgerMenu {
+        margin-right: 80%;
+    }
+
 
     .flex-container {
         display: flex;
@@ -1189,15 +1231,11 @@ input  {
     }
 
     .friends {
-        margin-left: 187px;
+        margin-left: 80%;
     }
 
     .friends img {
         width: 77px;
-    }
-
-    .bars {
-        margin-right: 241px;
     }
 
     .gameButtons button {
@@ -1380,6 +1418,12 @@ input  {
         font-size: 16px;
         margin-top: 32px;
         font-weight: bold;
+    }
+
+    .chess-pawn {
+        visibility: hidden;
+        width:0px;
+        height: 0px;
     }
 
     /*tablet videos*/
@@ -1847,7 +1891,7 @@ input  {
 
 /*desktop media query*/
 
-@media (min-width: 1030px) {
+@media (min-width: 1188px) {
 
     .hamburgerMenu--toggle .bars:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
@@ -1873,6 +1917,14 @@ input  {
         width: 52px;
     }
 
+    .hamburgerMenu {
+        margin-right: 210%;
+    }
+
+    .friends {
+        margin-left: 210%
+    }
+
     .bars {
         width: 32px;
         margin-bottom: 0px;
@@ -1881,12 +1933,97 @@ input  {
 
     /*desktop home page*/
 
+    .accountSection-home {
+        display: grid;
+        grid-template-columns: 103px 180px 74px 133px 74px 103px;
+        margin-bottom: 0px;
+        justify-content: start;
+        margin-left: 5%;
+    }
+
+    .accountSection-home img {
+        margin-top: 60px;
+    }
+
+    .youraccountinfo {
+        margin-left: 30px;
+    }
+    
+    .youraccountinfo-home h1 {
+        margin-top:70px;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: -8px;
+    }
+    
+    .youraccountinfo-home .joined-home {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 0px
+    }
+
+    .your-puzzle-rating-home h1 {
+        font-size: 20px;
+        margin-top: 70px;
+        font-weight: 400;
+    }
+
+    .your-rapid-rating-home h1 {
+        font-size: 20px;
+        margin-top: 70px;
+        font-weight: 400;
+    }
+
     .gameButtons {
         display: grid;
         justify-content: start;
         grid-template-columns: 200px 290px 200px;
-        margin-top: 100px;
-        margin-left: 10%;
+        margin-top: 72px;
+        margin-left: 5%;
     }
+
+    .buttons-and-pawn {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .friendBot {
+        flex-direction: column;
+        margin: 51px 0 45px 5%;
+        text-align: center;
+        justify-content:center;
+    }
+
+    .chess-pawn {
+        visibility: visible;
+        width:160.42px;
+        height: 285.33px;
+        display:flex;
+        margin-left: 5%;
+    }
+
+    .playFriend {
+        outline: #8BEEDD solid 6px;
+        width: 245px;
+        height: 69px;
+        font-size: 20px;
+        margin-right: 0px;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+
+
+    .playBot {
+        outline: #8BEEDD solid 6px;
+        width: 167px;
+        height: 44px;
+        font-size: 20px;
+        margin-left:0px;
+        font-weight: bold;
+        margin-top: 24px;
+    }
+
 
 }
