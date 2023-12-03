@@ -2010,9 +2010,39 @@ input  {
     .gameButtons {
         display: grid;
         justify-content: start;
-        grid-template-columns: 200px 290px 200px;
+        grid-template-columns: 200px 250px 200px;
         margin-top: 72px;
         margin-left: 5%;
+    }
+
+    .gameButtons button {
+        width: 158px;
+        height: 126px;
+    }
+
+    .dailyGame img {
+        width: 65.43px;
+        margin: auto;
+    }
+    
+    .rapidGame img {
+        width: 75.83px;
+    }
+    
+    .blitzGame img{
+        width: 49.04px;
+    }
+    
+    .bulletGame img{
+        width: 97.98px;
+    }
+    
+    .lessonsGame img {
+        width: 50.8px;
+    }
+    
+    .puzzlesGame img{
+        width: 75.73px;
     }
 
     .buttons-and-pawn {
