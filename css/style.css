@@ -145,6 +145,13 @@ li img {
     margin-bottom: 0px;
 }
 
+.sepLinesHamburger-trending {
+    background-color: #545782;
+    height: 4px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
 .bars {
     background-color:#ffff;
     width: 24.72px;
@@ -173,6 +180,13 @@ body {
 }
 
 /*footer*/
+
+.sepLinesHamburger-footer {
+    background-color: #545782;
+    height: 4px;
+    width: 100%;
+    margin-bottom: 0px;
+}
 
 .footer-container {
     display: flex;
@@ -1017,6 +1031,11 @@ input  {
 /*media queries*/
 
 @media (max-width:375px) {
+
+    .accountSection-home{
+        display:none;
+    }
+
     .nav {
         width: 288px;
         font-size: 16px;
@@ -1063,6 +1082,10 @@ input  {
 
     .chess-pawn {
         display: none;
+    }
+
+    .accountSection-home{
+        display:none;
     }
     
 }
@@ -1424,6 +1447,12 @@ input  {
         visibility: hidden;
         width:0px;
         height: 0px;
+    }
+
+    .accountSection-home {
+        visibility: hidden;
+        height: 0px;
+        width:0px;
     }
 
     /*tablet videos*/
@@ -1934,6 +1963,9 @@ input  {
     /*desktop home page*/
 
     .accountSection-home {
+        visibility: visible;
+        height: 160px;
+        width: 612px;
         display: grid;
         grid-template-columns: 103px 180px 74px 133px 74px 103px;
         margin-bottom: 0px;
@@ -2025,5 +2057,144 @@ input  {
         margin-top: 24px;
     }
 
+    .recentGames {
+        background-color:#080912;
+        width: 648px;
+        height: 653px;
+        margin-left: 5%;
+        padding-top: 0px;
+    }
 
+    .recentGames h3 {
+        font-size: 20px;
+        margin-bottom: 31px;
+    }
+
+    .recentGames button {
+        font-size: 20px;
+    }
+    
+    .recent-games-and-rec-vid {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .rec-vid-and-trending {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+
+    .sepLinesHamburger-trending {
+        display:none;
+    }
+
+    .beatRuyVid .thumbnail img {
+        margin-bottom: none;
+    }
+
+    .recVid {
+        background-color:#282547;
+        border-radius: 5px;
+        margin-top: 0px;
+        height: 353px;
+    }
+
+    .recVid .vidpfp img{
+        width: 44px;
+    }
+
+    .beatRuyVid .secondary-vid-info .video-title {
+        font-size: 17px;
+    }
+
+    .beatRuyVid .by-and-view .content-creator {
+        font-size: 15px;
+    }
+
+    .beatRuyVid .by-and-view .video-views{
+        font-size: 12px;
+    }
+
+    .recVidTitle {
+        margin-top: 27px;
+    }
+
+    .beatRuyVid .vidInfo {
+        margin-bottom: 0px;
+        margin-top:0px;
+    }
+
+    .trendingContainer {
+        margin-top: 22px;
+    }
+
+    .beatRuyVid .thumbnail img {
+        width: 367px;
+    }
+
+    .trendingContainer {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+        padding-top: 1px;
+    }
+
+    .trending-post-heading {
+        font-size: 24px;
+        margin-top:12px;
+    }
+
+    /*desktop footer*/
+
+    .footer-container {
+        display: flex;
+        flex-direction:row;
+    }
+
+    .name-and-tagline {
+        justify-content: left;
+        margin-left: 5%;
+    }
+    
+    footer h4 {
+        text-align: left;
+        margin-top: 36px;
+        font-size: 18px;
+    }
+    
+    footer h5 {
+        text-align: left;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .top-and-bottom-footer {
+        display:flex;
+
+    }
+    
+    .bottomlist {
+        display: grid;
+        grid-template-columns:104px 104px;
+        font-size: 14px;
+        font-weight: 100;
+        margin-top:49px;
+    }
+    
+    .toplist {
+        display:grid;
+        grid-template-columns: 95px 95px 103px;
+        font-size: 14px;
+        font-weight:100;
+        margin-top: 49px;
+        margin-left: 89px;
+    }
+    
+    footer img {
+        width: 271px;
+        margin: auto;
+        margin-top: 44px;
+        margin-bottom: 42px;
+    }
 }
