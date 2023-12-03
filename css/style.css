@@ -2235,6 +2235,31 @@ input  {
         margin-bottom: 42px;
     }
 
+    /*desktop search bar*/
+    .searchContainer {
+        width: 698px;
+        height: 51px;
+    }
+    
+    input  {
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        margin: 10px;
+    }
+    
+    .search-bar {
+        width: 698px;
+        max-width: 698px;
+        height: 51px;
+    }
+    
+    .searchContainer button {
+        height: 51px;
+        width: 68px;
+        margin-left: 384px;
+    }
+
     /*desktop videos*/
 
     .videos-tab {
@@ -2253,6 +2278,58 @@ input  {
         display: grid;
         grid-template-columns: 163px 256px 157px;
         justify-content:center;
+    }
+
+    .vidButtons {
+        margin-top: 49px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .vidButtons button {
+        width: 130px;
+        margin-bottom: 49px;
+        font-size: 18px;
+    }
+    
+    .vidButtons .popular {
+        margin-right: 29.5px;
+    }
+    
+    .vidButtons .popular:focus {
+        margin-right: 29.5px;
+        background-color:#080912;
+    }
+    
+    .vidButtons .forYou, .live {
+        margin-left: 29.5px;
+        margin-right: 29.5px;
+    } 
+    
+    .vidButtons .forYou:focus {
+        margin-left: 29.5px;
+        margin-right: 29.5px;
+        background-color:#080912;
+    }
+    
+    .vidButtons .live:focus {
+        margin-left: 29.5px;
+        margin-right: 29.5px;
+        background-color:#080912;
+    }
+    
+    .vidButtons .sort:focus {
+        margin-left: 29.5px;
+        background-color:#080912;
+    }
+    
+    .vidButtons .live img {
+        margin-right: 8px;
+    }
+    
+    .vidButtons .sort {
+        margin-left: 29.5px;
     }
     
 }
