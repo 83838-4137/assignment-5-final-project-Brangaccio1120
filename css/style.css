@@ -709,8 +709,15 @@ input  {
 
 .recChallenges {
     display: grid;
-    grid-template-columns: 122px 122px 113px;
+    grid-template-columns: 115px 122px 113px;
     justify-content:center;
+}
+
+.commonTraps, .londonIdeas, .matingPatterns {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
 }
 
 .challengesHead {
@@ -1615,7 +1622,7 @@ input  {
 
     .recChallenges {
         display: grid;
-        grid-template-columns: 256px 256px 157px;
+        grid-template-columns: 165px 256px 157px;
         justify-content:center;
     }
 
@@ -2227,4 +2234,25 @@ input  {
         margin-top: 44px;
         margin-bottom: 42px;
     }
+
+    /*desktop videos*/
+
+    .videos-tab {
+        grid-template-columns: 413px 413px 360px;
+    }
+
+    .loadMore {
+        outline: #8BEEDD solid 5px;
+        width: 231px;
+        height: 51px;
+        font-size: 20px;
+        margin-bottom: 53px;
+    }
+
+    .recChallenges {
+        display: grid;
+        grid-template-columns: 163px 256px 157px;
+        justify-content:center;
+    }
+    
 }
