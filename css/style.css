@@ -1383,6 +1383,11 @@ input  {
         height: 141px;
     }
 
+    .recent-game-container-extra {
+        visibility: hidden;
+        height:0px;
+    }
+
     .recVid {
         margin-top: 43px;
     }
@@ -1911,8 +1916,6 @@ input  {
     .rightSideUp {
         margin: auto;
     }
-
-    
     
     .msg-play {
         margin: auto;
@@ -1940,6 +1943,101 @@ input  {
     .friendInfo h4 {
         font-size: 23px;
         font-weight: 400;
+    }
+
+    /*tablet forum post page*/
+
+    .commentContainer {
+        width: 197px;
+        height: 51px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 52px;
+        margin-top: 14px;
+    }
+    
+    input  {
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        margin: auto;
+        outline: none;
+        padding-left: 16px;
+    }
+    
+    .comment-bar {
+        width: 307px;
+        max-width: 400px;
+        background: #D9D9D9;
+        height: 44px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .commentContainer button {
+        background-color: #252747;
+        outline: none;
+        border: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 44px;
+        width: 59px;
+        margin-left: 18px;
+    }
+    
+    .mainPost {
+        background-color: #252747;
+        width: 441px;
+        height: 282px;
+        border-radius: 13px;
+        padding: 30px;
+        margin-bottom: 35px;
+    }
+
+    .response {
+        width: 441px;
+        height: 181px;
+        padding: 2px;
+        margin-bottom: 35px;
+    }
+
+    .response h4 {
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    
+    .response .likeDislike {
+        display: flex;
+        justify-content:flex
+    }
+    
+    .subResponse {
+        background-color: #161834;
+        width: 428px;
+        height: 255px;
+        border-radius: 13px;
+        display: block;
+        margin: auto;
+        padding: 10px;
+        margin-bottom: 35px;
+    }
+    
+    .subResponse button {
+        background-color: transparent;
+        border: none;
+    }
+    
+    .mainPost button {
+        background-color: transparent;
+        border: none;
+    }
+    
+    .response button {
+        background-color: transparent;
+        border: none;
     }
 
 }
@@ -2205,6 +2303,7 @@ input  {
     }
 
     .recent-game-container-extra {
+        visibility: visible;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -2493,5 +2592,7 @@ input  {
     .accountSection, .accountButtons {
         justify-content: left;
     }
+
+    /*friends section*/
 }
 
