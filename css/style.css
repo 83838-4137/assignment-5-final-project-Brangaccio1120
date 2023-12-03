@@ -735,7 +735,7 @@ input  {
 .overlay {
     background: rgba(0, 0, 0, 0.93);
     position: absolute;
-    width: 364px;
+    width: 373px;
     height: 53.75px;
     height: auto;
     margin-top:-64px;
@@ -2179,6 +2179,7 @@ input  {
         height: 653px;
         margin-left: 5%;
         padding-top: 0px;
+        border-radius: 5px;
     }
 
     .recentGames h3 {
@@ -2458,4 +2459,39 @@ input  {
         margin-left: 29.5px;
     }
     
+    /*desktop news*/
+    .newsstories {
+        display: grid;
+        grid-template-columns: 396px 395px 378px;
+        margin-top: 95px;
+    }
+
+    /*desktop account info*/
+    .all-account-elements {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .account-info-and-elo {
+        margin-left: 5%;
+    }
+
+    .all-account-elements .sepLinesHamburger {
+        display: none;
+    }
+
+    .accountButtons button {
+        width: 171px;
+        height:70px;
+    }
+
+    .accountSection {
+        margin-top: 0px;
+    }
+
+    .accountSection, .accountButtons {
+        justify-content: left;
+    }
 }
+
