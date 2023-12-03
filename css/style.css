@@ -26,6 +26,7 @@ body {
     width: 100%;
     position:sticky;
     top: 0;
+    z-index: 1;
 }
 
 .nav-items {
@@ -726,20 +727,32 @@ input  {
 
 /*news page*/
 
-.overlay a {
-    text-decoration: none;
-    display: flex;
-    z-index: 1;
+.mag-v-pragg-container, .hikaru-container, .greatest-match, .next-world-champ, .how-magnus-studies   {
+    margin-bottom: 42px;
+    height:221px;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.93);
+    position: absolute;
+    width: 364px;
+    height: 53.75px;
+    height: auto;
+    margin-top:-64px;
 }
 
 .overlay .news-title {
     font-size: 18px;
     font-weight: 700;
+    margin-top: 2px;
+    margin-bottom: 0px;
 }
 
 .overlay .newsName {
     font-size: 18px;
     font-weight: 400px;
+    margin-top: 3px;
+    margin-bottom: 5.5px;
 }
 
 .newsHeader {
@@ -754,15 +767,13 @@ input  {
 }
 
 .newsstories {
-    margin-top: 53px;
-}
-
-.newsstories {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 53px;
 }
+
 /*account page*/
 
 .accountSection {
@@ -1043,6 +1054,10 @@ input  {
         display:none;
     }
 
+    .recent-game-container-extra {
+        display: none;
+    }
+
     .nav {
         width: 288px;
         font-size: 16px;
@@ -1093,6 +1108,10 @@ input  {
 
     .accountSection-home{
         display:none;
+    }
+
+    .recent-game-container-extra {
+        display: none;
     }
     
 }
@@ -1945,8 +1964,66 @@ input  {
     height: 120px;
     }
 
+    .nav--toggle {
+        left: 42% !important;
+    }
+
     .nav-items {
     margin-top: 16px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        background-color:#090B0E;
+        font-weight:800;
+        width: 490px;
+        font-size: 20px;
+        height: 948px;
+        position: fixed;
+        top: 114px;
+    }
+    
+    .nav ul {
+        margin-top: 21px;
+        padding-left: 0;
+    }
+    .nav ul :link {
+        text-decoration: none;
+    }
+    
+    .nav-first-three li {
+        margin-bottom: 33px;
+        list-style: none;
+        text-align: left;
+    }
+    
+    .nav-second-three li {
+        margin-bottom: 33px;
+        list-style: none;
+        text-align: left;
+    }
+    
+    .nav-third-three li {
+        margin-bottom: 33px;
+        list-style: none;
+        text-align: left;
+    }
+    
+    nav .logo__img {
+        margin-top: 24px;
+        display:block;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    
+    li img {
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+        float:left;
+        padding-left: 35px;
+        text-align:center;
     }
 
     .friends img{
@@ -2094,6 +2171,8 @@ input  {
         margin-top: 24px;
     }
 
+    /*desktop home page recent games*/
+
     .recentGames {
         background-color:#080912;
         width: 648px;
@@ -2110,7 +2189,54 @@ input  {
     .recentGames button {
         font-size: 20px;
     }
+
+    .recent-game-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #282547;
+        height: 66px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 17px;
+        border-radius: 5px;
+    }
+
+    .recent-game-container-extra {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #282547;
+        height: 66px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 17px;
+        border-radius: 5px;
+    }
     
+    .winner p, .vs p, .loser p {
+        margin:0px;
+        text-align: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+    
+    .win-loss-icon p {
+        font-size: 16px;
+    }
+
+    .recent-game-thumb img {
+        width: 51px;
+    }
+
+    .win-loss-icon img {
+        width: 26px;
+    }
+    
+    /*desktop rec video home page*/
+
     .recent-games-and-rec-vid {
         display: flex;
         flex-direction: row;
