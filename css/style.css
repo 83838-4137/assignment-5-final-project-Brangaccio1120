@@ -313,11 +313,6 @@ footer img {
     z-index:1;
 }
 
-.playFriend .hover-play-friend {
-    position: absolute;
-    z-index: -1;
-}
-
 .playFriend {
     background: transparent;
     outline: #8BEEDD solid 3px;
