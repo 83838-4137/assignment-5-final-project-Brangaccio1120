@@ -19,7 +19,6 @@ body {
 
 .flex-container {
     display: flex;
-    justify-content: space-evenly;
     background-color: #090B0E;
     align-items: center;
     text-align: center;
@@ -771,7 +770,7 @@ input  {
 
 .overlay .newsName {
     font-size: 18px;
-    font-weight: 400px;
+    font-weight: 400;
     margin-top: 3px;
     margin-bottom: 5.5px;
 }
@@ -783,7 +782,7 @@ input  {
 }
 
 .newsHeader h3 {
-    size: 24px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -1727,7 +1726,7 @@ input  {
     .postContainer {
         width: 774px;
         height: 282px;
-        padding-top: 19x;
+        padding-top: 19px;
         padding-right: 121px;
         padding-left: 71px;
         margin-bottom: 35px;
@@ -1776,7 +1775,7 @@ input  {
     }
 
     .postContainer h3 {
-        font-size: 21;
+        font-size: 21px;
     }
 
     .postContainer p {
@@ -1796,7 +1795,7 @@ input  {
     
     .overlay .newsName {
         font-size: 18px;
-        font-weight: 400px;
+        font-weight: 400;
     }
     
     .newsHeader {
@@ -1806,7 +1805,7 @@ input  {
     }
     
     .newsHeader h3 {
-        size: 24px;
+        font-size: 24px;
         font-weight: bold;
     }
     
@@ -2074,7 +2073,6 @@ input  {
     
     .response .likeDislike {
         display: flex;
-        justify-content:flex
     }
     
     .subResponse {
@@ -2420,7 +2418,7 @@ input  {
     }
 
     .beatRuyVid .thumbnail img {
-        margin-bottom: none;
+        margin-bottom: 0px;
     }
 
     .recVid {
