@@ -26,7 +26,7 @@ body {
     width: 100%;
     position:sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .nav-items {
@@ -303,6 +303,21 @@ footer img {
     justify-content:center;
 }
 
+.playBot .no-hover-play-bot {
+    position: absolute;
+    z-index: 1;
+}
+
+.playFriend .no-hover-play-friend {
+    position: absolute;
+    z-index:1;
+}
+
+.playFriend .hover-play-friend {
+    position: absolute;
+    z-index: -1;
+}
+
 .playFriend {
     background: transparent;
     outline: #8BEEDD solid 3px;
@@ -315,9 +330,20 @@ footer img {
     margin-right: 13px;
 }
 
+
 .friend-button-items button:hover,.bot-button-items button:hover {
     background: #8BEEDD;
     color: #111220;
+}
+
+/*can't believe this worked*/
+
+.friend-button-items button:hover .no-hover-play-friend {
+    visibility: hidden;
+}
+
+.bot-button-items button:hover .no-hover-play-bot {
+    visibility:hidden;
 }
 
 .playFriend img {
@@ -1004,26 +1030,69 @@ input  {
     margin-left: 18px;
 }
 
-.mainPost, .response {
+.forum-pfp-and-name {
+    display: flex;
+    flex-direction: row;
+}
+
+.forum-pfp-and-name img {
+    margin-right: 16px;
+    margin-left: 25px;
+}
+
+.mainPost {
     background-color: #252747;
     width: 358px;
     height: 255px;
     border-radius: 13px;
     display: block;
     margin: auto;
+    margin-top: 63px;
     padding: 10px;
     margin-bottom: 35px;
 }
 
-.response .likeDislike {
-    display: flex;
-    justify-content:flex
+.response {
+    background-color: #252747;
+    width: 358px;
+    height: 181px;
+    border-radius: 13px;
+    display: block;
+    margin: auto;
+    margin-top: 63px;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.mainPost h3, .mainPost p, .mainPost .likeDislike {
+    margin-left: 25px;
+}
+
+.response p, .response .likeDislike {
+    margin-left: 25px;
+}
+
+.subResponse p, .subResponse .likeDislike {
+    margin-left: 25px;
+}
+
+.mainPost .likeDislike, .response .likeDislike, .subResponse .likeDislike {
+    display: grid;
+    grid-template-columns: 94px 94px 94px;
+}
+
+.response .likeDislike, .subResponse .likeDislike {
+    margin-top: 5%;
+}
+
+.response h4 {
+    margin-bottom: 0px;
 }
 
 .subResponse {
     background-color: #161834;
     width: 358px;
-    height: 255px;
+    height: 181px;
     border-radius: 13px;
     display: block;
     margin: auto;
@@ -1962,7 +2031,6 @@ input  {
         background-color: transparent;
         border: none;
         font-size: 16px;
-        margin: auto;
         outline: none;
         padding-left: 16px;
     }
@@ -2017,7 +2085,7 @@ input  {
     .subResponse {
         background-color: #161834;
         width: 428px;
-        height: 255px;
+        height: 160px;
         border-radius: 13px;
         display: block;
         margin: auto;
@@ -2025,6 +2093,10 @@ input  {
         margin-bottom: 35px;
     }
     
+    .subResponse h4 {
+        margin-bottom: 0px;
+    }
+
     .subResponse button {
         background-color: transparent;
         border: none;
@@ -2594,5 +2666,21 @@ input  {
     }
 
     /*friends section*/
-}
 
+
+    /*forum post desktop*/ 
+    .commentContainer {
+        width: 325px;
+        height: 51px;
+    }
+    
+    input  {
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        margin: auto;
+        outline: none;
+        padding-left: 0px;
+    }
+
+}
