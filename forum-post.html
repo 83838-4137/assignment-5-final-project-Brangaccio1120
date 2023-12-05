@@ -55,6 +55,13 @@
     </header>
 
     <script src="script.js"></script>
+    <script>
+        const resultsList = document.getElementById('forum-post')
+        new URLSearchParams(window.location.search).forEach((value,name) => {
+          resultsList.append(`${name}: ${value}`)
+          resultsList.append(document.createElement('br'))
+        })
+</script>
     
     <div class="mainPost">
         <div class="forum-pfp-and-name">
