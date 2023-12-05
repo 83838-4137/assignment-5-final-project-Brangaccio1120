@@ -2680,6 +2680,6 @@ input  {
     /*big desktop*/
     @media (min-width: 1188px) {
         .nav--toggle {
-            left: 42% !important;
+            left: 25% !important;
         }
     }
