@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>forum post</title>
+</head>
+<body>
+    <header class="flex-container">
+        <div class="nav-items">
+            <div class=hamburgerMenu>
+                <div class="bars"></div>
+                <div class="bars"></div>
+                <div class="bars"></div>
+            </div>
+            <h1 class="logo">
+                <a href="index.html"><img src="images/onechess-logo-12.svg" alt="one chess logo" class="logo__img"></a>
+            </h1>
+            <h2 class="friends"><a href="friends.html"><img src="images/friends.svg" alt="friends icon"></a>
+            </h2>
+            <nav class="nav">
+                <a href="index.html"><img src="images/onechess-logo-12.svg" class="logo__img" alt="one chess logo"></a>
+                <div class="sepLineLogo"></div>
+                    <!--I'm separating my links into three lists because that's how they are separated in my figma file-->
+                <div class="nav-first-three">
+                    <ul>
+                        <li><img src="images/online-games.svg" alt="online games icon"><a href="#">Online Games</a></li>
+                         <li class="bot-game-list"><img src="images/bot-games.svg" alt="bot games icon"><a href="#">Bot Games</a></li>
+                        <li><img src="images/puzzles.svg" alt="puzzles icon"><a href="#">Puzzles</a></li>
+                    </ul>
+                </div>
+                <div class="sepLinesHamburger"></div>
+                <div class="nav-second-three">
+                    <ul>
+                        <li><img src="images/videos-tab.svg" alt="videos tab icon"><a href="videos-and-tutorials.html">Videos</a></li> 
+                        <li><img src="images/forums-tab.svg" alt="forums tab icon"><a href="forums.html"><div class="nav-link-text"></div>Forums</a></li>
+                        <li><img src="images/news-tab.svg" alt="new tab icon"><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+                <div class="sepLinesHamburger"></div>
+                <div class="nav-third-three">
+                    <ul>
+                        <li><img src="images/account-icon.svg" alt="account icon"><a href="account.html">Account</a></li> 
+                        <li class="help-list"><img src="images/help-circle.svg" alt="help icon"><a href="#">Help</a></li> 
+                        <li class="sign-out-list"><img src="images/sign-out.svg" alt="sign out icon"><a href="#">Sign Out</a></li> 
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <script src="script.js"></script>
+    <script>
+        const resultsList = document.getElementById('forum-post')
+        new URLSearchParams(window.location.search).forEach((value,name) => {
+          resultsList.append(`${name}: ${value}`)
+          resultsList.append(document.createElement('br'))
+        })
+</script>
+    
+    <div class="mainPost">
+        <div class="forum-pfp-and-name">
+            <img src="images/forum-post-page/other-comments-pfp.svg" alt="profile picture">
+            <h4>Chess_Brother</h4>
+        </div>
+        <h3>Perhaps my best queen sacrifice</h3>
+        <p>I usually blunder the queen and call it a sacrifice, but this time, it led me to a brutal mate in 3.</p>
+        <div class="likeDislike">
+            <div class="like"><button><img src="images/like-button-forum.svg" alt="like button"></button>1.3k</div>
+            <div class="dislike"><button><img src="images/dislike-button-forum.svg" alt="dislike button"></button>45</div>
+            <div class="comment"><button><img src="images/comment_buttton_forum.svg" alt="comment button"></button>100</div>
+            </div>
+    </div>
+
+    <div class="commentContainer">
+        <form class="comment-bar">
+            <input type="text" placeholder="Leave a Comment" name="search" id="search">
+            <button class="search" type="submit"><img src="images/comment-arrow.svg" alt="search icon"></button>
+        </form>
+    </div>
+
+    <div class="response">
+        <div class="forum-pfp-and-name">
+            <img src="images/forum-post-page/other-comments-pfp.svg" alt="profile picture">
+            <h4>Jimbo_226</h4>
+        </div>
+        <p>I did something similar in a tournament. lost tho</p>
+        <div class="likeDislike">
+            <div class="like"><button><img src="images/like-button-forum.svg" alt="like button"></button>1.3k</div>
+            <div class="dislike"><button><img src="images/dislike-button-forum.svg" alt="dislike button"></button>45</div>
+            <div class="comment"><button><img src="images/comment_buttton_forum.svg" alt="comment button"></button>100</div>
+            </div>
+    </div>
+
+    <div class="subResponse">
+        <div class="forum-pfp-and-name">
+            <img src="images/forum-post-page/other-comments-pfp.svg" alt="profile picture">
+            <h4>The_Bankss</h4>
+        </div>
+        <p>u been garbage</p>
+        <div class="likeDislike">
+            <div class="like"><button><img src="images/like-button-forum.svg" alt="like button"></button>1.3k</div>
+            <div class="dislike"><button><img src="images/dislike-button-forum.svg" alt="dislike button"></button>45</div>
+            <div class="comment"><button><img src="images/comment_buttton_forum.svg" alt="comment button"></button>100</div>
+            </div>
+    </div>
+
+    <div class="response">
+        <div class="forum-pfp-and-name">
+            <img src="images/forum-post-page/other-comments-pfp.svg" alt="profile picture">
+            <h4>KimKim</h4>
+        </div>
+        <p>I love it when I’m able to sacrifice the queen. Some people don’t know how to react.</p>
+        <div class="likeDislike">
+            <div class="like"><button><img src="images/like-button-forum.svg" alt="like button"></button>1.3k</div>
+            <div class="dislike"><button><img src="images/dislike-button-forum.svg" alt="dislike button"></button>45</div>
+            <div class="comment"><button><img src="images/comment_buttton_forum.svg" alt="comment button"></button>100</div>
+            </div>
+    </div>
+
+    <div class="response">
+        <div class="forum-pfp-and-name">
+            <img src="images/forum-post-page/other-comments-pfp.svg" alt="profile picture">
+            <h4>BigHater</h4>
+        </div>
+        <p>I just sent you a challenge. You’re one of the most fraudulent players I’ve seen.</p>
+        <div class="likeDislike">
+            <div class="like"><button><img src="images/like-button-forum.svg" alt="like button"></button>1.3k</div>
+            <div class="dislike"><button><img src="images/dislike-button-forum.svg" alt="dislike button"></button>45</div>
+            <div class="comment"><button><img src="images/comment_buttton_forum.svg" alt="comment button"></button>100</div>
+            </div>
+    </div>
+
+    <div class="response">
+        <div class="forum-pfp-and-name">
+            <img src="images/forum-post-page/other-comments-pfp.svg" alt="profile picture">
+            <h4>Classy-gent</h4>
+        </div>
+        <p>Jolly Good show.</p>
+        <div class="likeDislike">
+            <div class="like"><button><img src="images/like-button-forum.svg" alt="like button"></button>1.3k</div>
+            <div class="dislike"><button><img src="images/dislike-button-forum.svg" alt="dislike button"></button>45</div>
+            <div class="comment"><button><img src="images/comment_buttton_forum.svg" alt="comment button"></button>100</div>
+            </div>
+    </div>
+    <div class="sepLinesHamburger"></div>
+    <footer class="footer-container">
+
+        <div class="name-and-tagline">
+        <h4>ONECHESS</h4>
+    
+        <h5>WATCH, LEARN, CONNECT</h5>
+    
+        </div>
+        
+        <div class="top-and-bottom-footer"></div>
+        <ul class="toplist">
+            <li>About</li>
+            <li>FAQ</li>
+            <li>Terms of Service</li>
+        </ul>
+    
+        <ul class="bottomlist">
+            <li>Privacy</li>
+            <li>Contact Us</li>
+        </ul>
+    
+        <img src="images/footer-socials.svg" alt="all social media icons">
+    </footer>
+</body>
+</html>
