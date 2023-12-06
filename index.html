@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Onechess</title>
+</head>
+<header class="flex-container">
+    <div class="nav-items">
+        <div class=hamburgerMenu>
+            <div class="bars"></div>
+            <div class="bars"></div>
+            <div class="bars"></div>
+        </div>
+        <h1 class="logo">
+            <a href="index.html"><img src="images/onechess-logo-12.svg" alt="one chess logo" class="logo__img"></a>
+        </h1>
+        <h2 class="friends"><a href="friends.html"><img src="images/friends.svg" alt="friends icon"></a>
+        </h2>
+        <nav class="nav">
+            <a href="index.html"><img src="images/onechess-logo-12.svg" class="logo__img" alt="one chess logo"></a>
+            <div class="sepLineLogo"></div>
+                <!--I'm separating my links into three lists because that's how they are separated in my figma file-->
+            <div class="nav-first-three">
+                <ul>
+                    <li><img src="images/online-games.svg" alt="online games icon"><a href="#">Online Games</a></li>
+                     <li class="bot-game-list"><img src="images/bot-games.svg" alt="bot games icon"><a href="#">Bot Games</a></li>
+                    <li><img src="images/puzzles.svg" alt="puzzles icon"><a href="#">Puzzles</a></li>
+                </ul>
+            </div>
+            <div class="sepLinesHamburger"></div>
+            <div class="nav-second-three">
+                <ul>
+                    <li><img src="images/videos-tab.svg" alt="videos tab icon"><a href="videos-and-tutorials.html">Videos</a></li> 
+                    <li><img src="images/forums-tab.svg" alt="forums tab icon"><a href="forums.html"><div class="nav-link-text"></div>Forums</a></li>
+                    <li><img src="images/news-tab.svg" alt="new tab icon"><a href="news.html">News</a></li>
+                </ul>
+            </div>
+            <div class="sepLinesHamburger"></div>
+            <div class="nav-third-three">
+                <ul>
+                    <li><img src="images/account-icon.svg" alt="account icon"><a href="account.html">Account</a></li> 
+                    <li class="help-list"><img src="images/help-circle.svg" alt="help icon"><a href="#">Help</a></li> 
+                    <li class="sign-out-list"><img src="images/sign-out.svg" alt="sign out icon"><a href="#">Sign Out</a></li> 
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <script src="script.js"></script>
+
+    <section class="accountSection-home">
+        <img src="images/large-pfp.svg" alt="blank profile picture">
+        <div class="youraccountinfo-home">
+        <h1>Chess-Champ</h1>
+        <h3 class="joined-home"><a href=account.html>Account</a></h3>
+        </div>
+
+        <div class="puzzles-rating-home"><img src="images/game-logos/puzzles-chess-logo.svg" alt="puzzle rating"></div>
+        <div class="your-puzzle-rating-home">
+            <h1>2100 ELO</h1>
+        </div>
+
+
+        <div class="rapid-rating-home">
+            <img src="images/game-logos/rapid-chess-logo.svg" alt="rapid rating">
+        </div>
+        <div class="your-rapid-rating-home">
+            <h1>1000 ELO</h1>
+        </div>
+
+        </section>
+
+    <!--these are the main game tiles-->
+    <div class="buttons-and-pawn">
+    <section class="gameButtons">
+        <div class="dailyGame"><button type="button"><img src="images/game-logos/daily-chess-logo.svg" alt="daily games icon"></button><p>Daily</p></div>
+
+        <div class="rapidGame"><button type="button"><img src="images/game-logos/rapid-chess-logo.svg" alt="rapid games icon"></button><p>Rapid</p></div>
+
+        <div class="blitzGame"><button type="button"><img src="images/game-logos/blitx-chess-logo.svg" alt="blitz game icon"></button><p>Blitz</p></div>
+
+        <div class="bulletGame"><button type="button"><img src="images/game-logos/bullet-chess-logo.svg" alt="bullet game icon"></button><p>Bullet</p></div>
+
+        <div class="lessonsGame"><button type="button"><img src="images/game-logos/lessons-chess-logo.svg" alt="lessons icon"></button><p>Lessons</p></div>
+
+        <div class="puzzlesGame"><button type="button"><img src="images/game-logos/puzzles-chess-logo.svg" alt="puzzles icon"></button><p>Puzzles</p></div>
+        </section>
+
+        <!--These are the play friend and play bot buttons-->
+
+    <section class="friendBot">
+        <div class="friend-button-items">
+            <button class="playFriend">
+                <img class="no-hover-play-friend" src="images/play-friend.svg" alt="play friend icon"><img class="hover-play-friend" src="images/play-friend-hover.svg" alt="play friend">Play Friend</button>
+        </div>
+
+        <div class="bot-button-items">
+            <button class="playBot">
+                <img class="no-hover-play-bot" src="images/bot-games.svg" alt="play bot icon"><img class="hover-play-bot" src="images/play-bot-hover.svg" alt="play bot">Play Bot</button>
+        </div>
+    </section>
+
+            <!--This pawn can only be seen in desktop-->
+
+            <div class="chess-pawn"><img src="images/onechess-pawn.svg" alt="pawn"></div>
+
+</div>
+
+    <!--Recent game section-->
+
+<div class="recent-games-and-rec-vid">
+
+    <section class="recentGames">
+        <h3>Recent Games</h3>
+        
+        <div class="recent-game-container">
+            <div class="recent-game-thumb"><img src="images/win-or-lose/blitz-recentgame.svg" alt="recent blitz game"></div>
+            <div class="player-vs-opponent">
+                <div class="winner"><p>Chess-Champ</p></div>
+                <div class="vs"><p>V.S.</p></div>
+                <div class="loser"><p>Tamara_L</p></div>
+            </div>
+            <div class="win-loss-icon">
+                <img src="images/win-or-lose/win-trophy.svg" alt="win trophy">
+                <p>35 moves</p>
+            </div>
+        </div>
+        <div class="recent-game-container">
+            <div class="recent-game-thumb"><img src="images/win-or-lose/bullet-recentgame.svg" alt="recent bullet game"></div>
+            <div class="player-vs-opponent">
+                <div class="winner"><p>Piper_77</p></div>
+                <div class="vs"><p>V.S.</p></div>
+                <div class="loser"><p>Chess-Champ</p></div>
+            </div>
+            <div class="win-loss-icon">
+                <img src="images/win-or-lose/flag-defeat.svg" alt="loss icon">
+                <p>22 moves</p>
+            </div>
+        </div>
+        <div class="recent-game-container">
+            <div class="recent-game-thumb"><img src="images/win-or-lose/rapid-recentgame.svg" alt="recent rapid game"></div>
+            <div class="player-vs-opponent">
+                <div class="winner"><p>Chess-Champ</p></div>
+                <div class="vs"><p>V.S.</p></div>
+                <div class="loser"><p>The_Carter</p></div>
+            </div>
+            <div class="win-loss-icon">
+                <img src="images/win-or-lose/win-trophy.svg" alt="win trophy">
+                <p>45 moves</p>
+            </div>
+        </div>
+        <div class="recent-game-container-extra">
+            <div class="recent-game-thumb"><img src="images/win-or-lose/rapid-recentgame.svg" alt="recent rapid game"></div>
+            <div class="player-vs-opponent">
+                <div class="winner"><p>Chess-Champ</p></div>
+                <div class="vs"><p>V.S.</p></div>
+                <div class="loser"><p>Homie33</p></div>
+            </div>
+            <div class="win-loss-icon">
+                <img src="images/win-or-lose/win-trophy.svg" alt="win trophy">
+                <p>15 moves</p>
+            </div>
+        </div>
+        <div class="recent-game-container-extra">
+            <div class="recent-game-thumb"><img src="images/win-or-lose/daily-recent-game.svg" alt="recent daily game"></div>
+            <div class="player-vs-opponent">
+                <div class="winner"><p>Chess-Champ</p></div>
+                <div class="vs"><p>V.S.</p></div>
+                <div class="loser"><p>Theone2
+                </p></div>
+            </div>
+            <div class="win-loss-icon">
+                <img src="images/win-or-lose/tie-game.svg" alt="tie icon">
+                <p>15 moves</p>
+            </div>
+        </div>
+
+        <div class="recent-game-container-extra">
+            <div class="recent-game-thumb"><img src="images/win-or-lose/bullet-recentgame.svg" alt="recent bullet game"></div>
+            <div class="player-vs-opponent">
+                <div class="winner"><p>Chess-Champ</p></div>
+                <div class="vs"><p>V.S.</p></div>
+                <div class="loser"><p>Theone2
+                </p></div>
+            </div>
+            <div class="win-loss-icon">
+                <img src="images/win-or-lose/flag-defeat.svg" alt="loss icon">
+                <p>70 moves</p>
+            </div>
+        </div>
+        
+        <div class="viewAll"><button class="viewAll">View All <img src="images/right-point-chevron.svg" alt="view all chevron"></button></div>
+    </section>
+
+    <!--recommended video section-->
+
+    
+    <div class="rec-vid-and-trending">
+        <section class="recVid">
+            <h3 class="recVidTitle">Based On Your Recent Games</h3>
+                <div class="beatRuyVid">
+                    <div class="thumbnail">
+                        <img src="images/beat-ruy-thumbnail.svg" alt="how to beat the ruy lopez video thumbnail">
+                    </div>
+                    <div class="vidInfo">
+                        <div class="vidpfp">
+                            <img src="images/creator-pfp/pawnstar-pfp.svg" alt="video creator thumbnail">
+                        </div>
+                    <div class="secondary-vid-info">
+                        <p class="video-title">How to Beat the Ruy Lopez</p>
+                    <div class="by-and-view">
+                        <p class="content-creator">By: Pawnstar</p>
+                        <p class="video-views">145 views</p>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+        </section>
+
+        <!--trending post section-->
+
+    <div class="sepLinesHamburger-trending"></div>
+    
+    <div class="trendingPost">
+        <div class="trendingContainer">
+            <p class="trending-post-heading">Trending Post</p>
+            <p class="trending-user">Chess_Brother</p>
+            <p class="trending-title">Perhaps my best queen sacrifice</p>
+            <p class="trending-post-text">I usually blunder the queen and call it a sacrifice, but this time, it led me to a brutal mate in 3. </p>
+            <div class="viewPostButton"><button onclick="location.href='forum-post.html'">View Post</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+    <!--footer-->
+    
+    <div class="sepLinesHamburger-footer"></div>
+<footer class="footer-container">
+
+    <div class="name-and-tagline">
+    <h4>ONECHESS</h4>
+
+    <h5>WATCH, LEARN, CONNECT</h5>
+
+    </div>
+    
+    <div class="top-and-bottom-footer"></div>
+    <ul class="toplist">
+        <li>About</li>
+        <li>FAQ</li>
+        <li>Terms of Service</li>
+    </ul>
+
+    <ul class="bottomlist">
+        <li>Privacy</li>
+        <li>Contact Us</li>
+    </ul>
+
+    <img src="images/footer-socials.svg" alt="all social media icons">
+</footer>
+</body>
+</html>

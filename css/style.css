@@ -1,0 +1,2685 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,:after,:before {
+    box-sizing:inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #ffff;
+    margin:0;
+}
+
+/*header and navigation*/
+
+.flex-container {
+    display: flex;
+    background-color: #090B0E;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    position:sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 71px;
+}
+
+.logo {
+    text-align: center;
+}
+
+
+.logo__img {
+    width: 113px;
+}
+
+.friends:hover {
+    color: gray;
+}
+
+/*hamburger content*/
+
+nav {
+    transition:all 0.3s ease-in-out;
+}
+
+.hamburgerMenu--toggle .bars:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburgerMenu--toggle .bars:nth-child(2) {
+    opacity:0;
+}
+
+.hamburgerMenu--toggle .bars:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    background-color:#090B0E;
+    font-weight:800;
+    width: 288px;
+    font-size: 20px;
+    height: 817px;
+    position: fixed;
+    top: 150px;
+    left: 0;
+}
+
+.nav ul {
+    margin-top: 21px;
+    padding-left: 0;
+}
+.nav ul :link {
+    text-decoration: none;
+}
+
+.nav-first-three li {
+    margin-bottom: 33px;
+    list-style: none;
+    text-align: left;
+}
+
+.nav-second-three li {
+    margin-bottom: 33px;
+    list-style: none;
+    text-align: left;
+}
+
+.nav-third-three li {
+    margin-bottom: 33px;
+    list-style: none;
+    text-align: left;
+}
+
+nav .logo__img {
+    margin-top: 24px;
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+li img {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    float:left;
+    padding-left: 35px;
+    text-align:center;
+}
+
+.bot-game-list img{
+    margin-right: 34px;
+}
+
+.help-list img, .sign-out-list img {
+    margin-right: 34px;
+}
+
+.sepLineLogo {
+    background-color: #545782;
+    height: 4px;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.sepLinesHamburger {
+    background-color: #545782;
+    height: 4px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.sepLinesHamburger-trending {
+    background-color: #545782;
+    height: 4px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.bars {
+    background-color:#ffff;
+    width: 24.72px;
+    height: 4px;
+    margin: 5.5px 0;
+    transition:all 0.3s ease-in-out;
+}
+
+a:link {
+    color:white;
+}
+
+a:visited {
+    color:white;
+}
+
+/*javascript*/
+.nav--toggle {
+    left: 69% !important;
+}
+
+/*body*/
+
+body {
+    background-color:#111220;
+}
+
+/*footer*/
+
+.sepLinesHamburger-footer {
+    background-color: #545782;
+    height: 4px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction:column;
+    font-family: 'Roboto';
+    background-color:#111220;
+}
+
+footer h4 {
+    text-align: center;
+    margin: auto;
+    margin-top: 9px;
+}
+
+footer h5 {
+    text-align: center;
+    margin: auto;
+    margin-top: 24px;
+    font-weight: 400;
+}
+
+.bottomlist {
+    display: grid;
+    grid-template-columns:104px 104px;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 100;
+    justify-content: center;
+}
+
+.toplist {
+    display:grid;
+    grid-template-columns: 95px 95px 103px;
+    list-style:none; 
+    font-size: 14px;
+    font-weight:100;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+footer img {
+    width: 202px;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/*home page*/
+
+.gameButtons button {
+    background-color:#252747;
+    width: 131.58px;
+    height: 105px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+}
+
+.gameButtons button:hover {
+    background-color: #191b39;
+}
+
+.dailyGame, .rapidGame, .blitzGame, .bulletGame, .lessonsGame, .puzzlesGame {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.gameButtons {
+    display: grid;
+    grid-template-columns: 183px 183px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.dailyGame img {
+    width: 54.50px;
+    margin: auto;
+}
+
+.rapidGame img {
+    width: 63px;
+}
+
+.blitzGame img{
+    width: 40.76px;
+}
+
+.bulletGame img{
+    width: 81.48px;
+}
+
+.lessonsGame img {
+    width: 42px
+}
+
+.puzzlesGame img{
+    width: 63px;
+}
+
+.gameButtons p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.friendBot {
+    display: flex;
+    flex-direction: row;
+    margin: 51px 0 45px 0;
+    text-align: center;
+    justify-content:center;
+}
+
+.playBot .no-hover-play-bot {
+    position: absolute;
+    z-index: 1;
+}
+
+.playFriend .no-hover-play-friend {
+    position: absolute;
+    z-index:1;
+}
+
+.playFriend {
+    background: transparent;
+    outline: #8BEEDD solid 3px;
+    width: 145px;
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+    color: #8BEEDD;
+    font-size: 16px;
+    margin-right: 13px;
+}
+
+
+.friend-button-items button:hover,.bot-button-items button:hover {
+    background: #8BEEDD;
+    color: #111220;
+}
+
+/*can't believe this worked*/
+
+.friend-button-items button:hover .no-hover-play-friend {
+    visibility: hidden;
+}
+
+.bot-button-items button:hover .no-hover-play-bot {
+    visibility:hidden;
+}
+
+.playFriend img {
+    width: 23.18px;
+    height: 23.18px
+}
+
+.playBot {
+    background: transparent;
+    outline: #8BEEDD solid 3px;
+    width: 145px;
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+    color: #8BEEDD;
+    font-size: 16px;
+    margin-left: 13px;
+}
+
+.playBot img {
+    width: 27px;
+}
+
+.recentGames h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.recentGames button {
+    background: transparent;
+    width: 145px;
+    height: 44px;
+    border: none;
+    color: #ffff;
+    font-size: 20px;
+}
+
+.viewAll {
+    text-align:center;
+}
+
+.recVid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 43px;
+    align-items:center;
+}
+
+.beatRuyVid {
+    display: flex;
+    flex-direction: column;
+}
+
+.recVidTitle {
+    text-align:center;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 46px;
+}
+
+.beatRuyVid img {
+    justify-content: center;
+    margin: auto;
+    display:flex;
+}
+
+.beatRuyVid .thumbnail img {
+    width: 357px;
+    margin-bottom: 10px;
+}
+
+.trendingContainer {
+    background-color: #252747;
+    border-radius: 13px;
+    margin: 30px 16px 30px 16px;
+    height: 267px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-top: 1px;
+}
+
+.trending-post-heading {
+    color:#8BEEDD;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:21px;
+}
+
+.trending-user {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom:0;
+}
+
+.trending-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #DEDEDE;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.trending-post-text {
+    margin-top: 7px; 
+    font-size: 16px;
+    color: #DEDEDE;
+    margin-bottom: 0;
+}
+
+.viewPostButton button {
+    background: transparent;
+    outline: #8BEEDD solid 3px;
+    width: 145px;
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+    color: #8BEEDD;
+    font-size: 16px;
+    margin-top: 32px;
+    font-weight: bold;
+}
+
+.viewPostButton button:hover {
+    background-color: #8BEEDD;
+    color: #252747;
+}
+/*videos and tutorials page*/
+
+.videosHead {
+    text-align: center;
+}
+
+.searchContainer {
+    width: 302px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+input  {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    margin: auto;
+    outline: none;
+    padding-left: 16px;
+}
+
+.search-bar {
+    width: 307px;
+    max-width: 400px;
+    background: #D9D9D9;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.searchContainer button {
+    background-color: #080912;
+    outline: none;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 44px;
+    width: 68px;
+    margin-left: 18px;
+}
+
+.vidInfo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 38px;
+}
+
+.secondary-vid-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.vidpfp {
+    width: 44px;
+}
+
+.by-and-view {
+    display: flex;
+    flex-direction:  row;
+}
+
+.video-title {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.content-creator {
+    font-size: 15px;
+    margin-top: 1px;
+    margin-right: 11px;
+}
+
+.video-views {
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.thumbnail {
+    margin-bottom: 9px;
+}
+
+.vidButtons {
+    margin-top: 49px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vidButtons button {
+    height:44px;
+    width: 78px;
+    background-color: #252747;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 49px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.vidButtons .popular {
+    margin-right: 8px;
+}
+
+.vidButtons .popular:focus {
+    margin-right: 8px;
+    background-color:#080912;
+}
+
+.vidButtons .forYou, .live {
+    margin-left: 8px;
+    margin-right: 8px;
+} 
+
+.vidButtons .forYou:focus {
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color:#080912;
+}
+
+.vidButtons .live:focus {
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color:#080912;
+}
+
+.vidButtons .sort:focus {
+    margin-left: 8px;
+    background-color:#080912;
+}
+
+.vidButtons .live img {
+    margin-right: 4px;
+}
+
+.vidButtons .sort {
+    margin-left: 8px;
+}
+
+.videos-tab {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dutchVid .thumbnail img{
+    justify-content: center;
+    margin: auto;
+    display:flex;
+}
+
+.londonVid .thumbnail img{
+    justify-content: center;
+    margin: auto;
+    display:flex;
+}
+
+.ruyVid .thumbnail img{
+    justify-content: center;
+    margin: auto;
+    display:flex;
+}
+
+.stockfishVid .thumbnail img{
+    justify-content: center;
+    margin: auto;
+    display:flex;
+}
+
+.kidVid .thumbnail img{
+    justify-content: center;
+    margin: auto;
+    display:flex;
+}
+
+.mosquitoVid .thumbnail img{
+    justify-content: center;
+    margin: auto;
+    display:flex;
+}
+
+.loadMore {
+    background: transparent;
+    outline: #8BEEDD solid 3px;
+    width: 145px;
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+    color: #8BEEDD;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin: auto;
+    margin-bottom: 17px;
+}
+
+.loadMore:hover {
+    background: #8BEEDD;
+    color: #111220;
+}
+
+
+
+/*forum page*/
+.postContainer {
+    background-color: #252747;
+    width: 358px;
+    height: 255px;
+    border-radius: 13px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.forumHeader {
+    text-align: center;
+    font-size: 24px;
+}
+
+.forumTopButtons {
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: 21px;
+}
+
+.categoryButton {
+    margin-right: 73.5px;
+}
+
+.createButton {
+    margin-left: 73.5px;
+}
+
+.likeDislike {
+    display: grid;
+    grid-template-columns: 121px 121px 94px;
+}
+
+.postContainer button {
+    background-color: transparent;
+    border:none;
+}
+
+.createButton {
+    background-color: transparent;
+    border:none;
+}
+
+.categoryButton {
+    background-color: transparent;
+    border:none;
+}
+
+.recChallenges {
+    display: grid;
+    grid-template-columns: 115px 122px 113px;
+    justify-content:center;
+}
+
+.commonTraps, .londonIdeas, .matingPatterns {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.challengesHead {
+    text-align: center;
+}
+
+/*news page*/
+
+.mag-v-pragg-container, .hikaru-container, .greatest-match, .next-world-champ, .how-magnus-studies   {
+    margin-bottom: 42px;
+    height:221px;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.93);
+    position: absolute;
+    width: 373px;
+    height: 53.75px;
+    height: auto;
+    margin-top:-64px;
+}
+
+.overlay .news-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+.overlay .newsName {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 3px;
+    margin-bottom: 5.5px;
+}
+
+.newsHeader {
+    text-align: center;
+    margin-bottom: 39px;
+    margin-top: 39px;
+}
+
+.newsHeader h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.newsstories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 53px;
+}
+
+/*account page*/
+
+.accountSection {
+    display: grid;
+    grid-template-columns: 65px 281px;
+    margin-bottom: 33px;
+    justify-content: center;
+}
+
+.accountSection img {
+    margin-top: 68px;
+}
+
+.accountButtons button {
+    background: transparent;
+    outline: #8BEEDD solid 3px;
+    width: 145px;
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+    color: #8BEEDD;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.youraccountinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.youraccountinfo h1 {
+    margin-top:58px;
+    font-size: 32px;
+    margin-bottom: -8px;
+}
+
+.youraccountinfo .joined {
+    margin-top: 12px;
+    font-size: 16px;
+    margin-bottom: 0px
+}
+
+.games-played {
+    font-size: 16px;
+    margin-top: 7px;
+
+}
+
+.accountButtons button:hover {
+    background-color:#8BEEDD;
+    color: #111220;
+}
+
+.accountButtons {
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.accountButtons .help {
+    margin-right: 12.5px;
+}
+
+.accountButtons .settings {
+    margin-left: 12.5px;
+}
+
+.accountRatings {
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 190px 166px;
+    margin-bottom: 41px;
+    margin-top: 44px;
+}
+
+.dailyRating, .rapidRating, .blitzRating, .bulletRating, .lessonsRating, .puzzlesRating {
+    background-color:#282547;
+    border-radius: 5px;
+    width: 169px;
+    height: 57px;
+    margin-bottom: 17px;
+    display: grid;
+    grid-template-columns: 61px 104px;
+}
+
+.dailyRating img, .rapidRating img, .blitzRating img, .bulletRating img,.lessonsRating img, .puzzlesRating img{
+    display:block;
+    margin-top: 6px;
+    margin-left: 8px;
+    justify-content: center;
+}
+
+
+
+.recentGames {
+    background-color:#080912;
+    padding-top: 46px;
+    padding-bottom: 38px;
+}
+
+.recent-game-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #282547;
+    height: 66px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.winner p, .vs p, .loser p {
+    margin:0px;
+    text-align: center;
+    justify-content: center;
+}
+
+.win-loss-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.win-loss-icon p {
+    font-weight: 400;
+    margin: 0px;
+}
+
+
+.viewAll {
+    background-color: transparent;
+    color: #ffff;
+}
+
+/*friends page*/
+
+.friendHeader {
+    text-align: center;
+    font-size: 25px;
+}
+
+.account1 {
+    background-color: #252747;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    height: 91px;
+}
+
+.account1 {
+    display: grid;
+    grid-template-columns: 89px 129px 76px;
+}
+
+.friendInfo {
+    margin: auto;
+}
+
+.rightSideUp {
+    margin: auto;
+}
+
+.msg-play {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.friends-play-icon {
+    margin-right: 25px;
+}
+
+.friendInfo h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.friendInfo h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*forum post page*/
+
+.commentContainer {
+    width: 197px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 52px;
+    margin-top: 14px;
+}
+
+input  {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    margin: auto;
+    outline: none;
+    padding-left: 16px;
+}
+
+.comment-bar {
+    width: 307px;
+    max-width: 400px;
+    background: #D9D9D9;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.commentContainer button {
+    background-color: #252747;
+    outline: none;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 44px;
+    width: 59px;
+    margin-left: 18px;
+}
+
+.forum-pfp-and-name {
+    display: flex;
+    flex-direction: row;
+}
+
+.forum-pfp-and-name img {
+    margin-right: 16px;
+    margin-left: 25px;
+}
+
+.mainPost {
+    background-color: #252747;
+    width: 358px;
+    height: 255px;
+    border-radius: 13px;
+    display: block;
+    margin: auto;
+    margin-top: 63px;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.response {
+    background-color: #252747;
+    width: 358px;
+    height: 181px;
+    border-radius: 13px;
+    display: block;
+    margin: auto;
+    margin-top: 63px;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.mainPost h3, .mainPost p, .mainPost .likeDislike {
+    margin-left: 25px;
+}
+
+.response p, .response .likeDislike {
+    margin-left: 25px;
+}
+
+.subResponse p, .subResponse .likeDislike {
+    margin-left: 25px;
+}
+
+.mainPost .likeDislike, .response .likeDislike, .subResponse .likeDislike {
+    display: grid;
+    grid-template-columns: 94px 94px 94px;
+}
+
+.response .likeDislike, .subResponse .likeDislike {
+    margin-top: 5%;
+}
+
+.response h4 {
+    margin-bottom: 0px;
+}
+
+.subResponse {
+    background-color: #161834;
+    width: 358px;
+    height: 181px;
+    border-radius: 13px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.subResponse button {
+    background-color: transparent;
+    border: none;
+}
+
+.mainPost button {
+    background-color: transparent;
+    border: none;
+}
+
+.response button {
+    background-color: transparent;
+    border: none;
+}
+
+/*media queries*/
+
+@media (max-width:375px) {
+
+    .accountSection-home{
+        display:none;
+    }
+
+    .recent-game-container-extra {
+        display: none;
+    }
+
+    .nav {
+        width: 288px;
+        font-size: 16px;
+        height: 530px;
+    }
+    
+    .nav ul {
+        margin-top: 21px;
+    }
+    
+    .nav-first-three li {
+        margin-bottom: 20px;
+    }
+    
+    .nav-second-three li {
+        margin-bottom: 20px;
+    }
+    
+    .nav-third-three li {
+        margin-bottom: 20px;
+    }
+    
+    nav .logo__img {
+        width:100px;
+    }
+    
+    li img {
+        padding-left: 42px;
+    }
+
+    .sepLineLogo {
+        margin-top: 21px;
+    }
+}
+
+@media (max-width:767px) {
+    .nav {
+        transform: translateX(-100%)
+    }
+    
+    .logo {
+        margin: 0 66px 0 82px;
+    }
+
+    .chess-pawn {
+        display: none;
+    }
+
+    .accountSection-home{
+        display:none;
+    }
+
+    .recent-game-container-extra {
+        display: none;
+    }
+    
+}
+
+/*media query tablet*/
+
+@media (min-width: 768px)  {
+
+    /*header and navigation*/
+
+    .hamburgerMenu--toggle .bars:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburgerMenu--toggle .bars:nth-child(2) {
+        opacity:0;
+    }
+    
+    .hamburgerMenu--toggle .bars:nth-child(3) {
+        transform: translateY(-16px) rotate(-45deg);
+    }
+
+    .hamburgerMenu {
+        margin-right: 80%;
+    }
+
+
+    .flex-container {
+        display: flex;
+        background-color: #090B0E;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        position:sticky;
+        top: 0;
+    }
+    
+    .nav-items {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        margin-top: 71px;
+    }
+    
+    .logo {
+        text-align: center;
+    }
+    
+    
+    .logo__img {
+        width: 149px;
+    }
+    
+    .friends:hover {
+        color: gray;
+    }
+
+    /*tablet navigation */
+
+    .nav {
+        transform: translateX(-100%);
+        top: 167px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        background-color:#090B0E;
+        font-weight:800;
+        width: 543px;
+        font-size: 23px;
+        height: 817px;
+        position: fixed;
+        top: 150px;
+        left: 0;
+    }
+
+    .nav ul {
+        margin-top: 31px;
+        padding-left: 0;
+    }
+
+    .nav-first-three li {
+        margin-bottom: 40px;
+    }
+    
+    .nav-second-three li {
+        margin-bottom: 40px;
+    }
+    
+    .nav-third-three li {
+        margin-bottom: 40px;
+    }
+    
+    nav .logo__img {
+        margin-top: 24px;
+        display:block;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    
+    li img {
+        height: 34.48px;
+    }
+    
+    .sepLineLogo {
+        height: 6px;
+        margin-top: 35px;
+    }
+    
+    .sepLinesHamburger {
+        height: 6px;
+        margin-bottom: 1px;
+    }
+    
+    .bars {
+        background-color:#ffff;
+        width: 39px;
+        height: 4px;
+        margin: 8px 0;
+    }
+    
+    a:link {
+        color:white;
+    }
+    
+
+
+    /*tablet footer*/
+
+    footer h4 {
+        text-align: center;
+        margin: auto;
+        margin-top: 19px;
+        font-size: 20px;
+    }
+    
+    footer h5 {
+        margin-top: 53px;
+        font-size: 20px;
+    }
+    
+    .toplist {
+        grid-template-columns: 95px 95px 138px;
+        font-size: 18px;
+        margin-top: 59px;
+    }
+
+    .bottomlist {
+        grid-template-columns:104px 104px;
+        font-size: 18px;
+        margin-top: 67px;
+    }
+    
+    footer img {
+        width: 431px;
+        margin-top: 52px;
+        margin-bottom: 41px;
+    }
+
+    /*tablet home page*/
+
+    .nav--toggle {
+        left: 66% !important;
+    }
+
+    .friends {
+        margin-left: 80%;
+    }
+
+    .friends img {
+        width: 77px;
+    }
+
+    .gameButtons button {
+        width: 195.07px;
+        height: 155.67px;
+        font-size: 20px;
+    }
+
+    .gameButtons {
+        display: grid;
+        grid-template-columns: 200px 290px 200px;
+        margin-top: 100px;
+    }
+
+    .gameButtons p {
+        font-size:20px;
+        margin-bottom: 60px;
+    }
+
+    .dailyGame img {
+        width: 80.79px;
+    }
+    
+    .rapidGame img {
+        width: 93.4px;
+    }
+    
+    .blitzGame img{
+        width: 60.43px;
+    }
+    
+    .bulletGame img{
+        width: 120.8px;
+    }
+    
+    .lessonsGame img {
+        width: 62.27px
+    }
+    
+    .puzzlesGame img{
+        width: 93.4px;
+    }
+
+    .friendBot {
+        margin-top: 0px;
+        margin-bottom: 75px;
+        text-align: center;
+        justify-content:center;
+        display:flex;
+    }
+
+    .friendBot button {
+        width: 166px;
+        height: 50.37px;
+    }
+    
+    .playFriend {
+        outline: #8BEEDD solid 4px;
+        width: 167px;
+        height: 44px;
+        border: none;
+        border-radius: 5px;
+        color: #8BEEDD;
+        font-size: 16px;
+        margin-right: 18px;
+    }
+
+    
+    .playBot {
+        outline: #8BEEDD solid 4px;
+        width: 167px;
+        height: 44px;
+        font-size: 16px;
+        margin-left: 18px;
+        font-weight: bold;
+    }
+
+    .playFriend img {
+        width: 27px;
+    }
+    
+    .playBot img {
+        width: 31px;
+    }
+
+    .recentGames h3 {
+        font-size: 28px;
+    }
+    
+    .recentGames button {
+        font-size: 28px;
+        font-weight: 200;
+    }
+
+    .recent-game-container {
+        height: 141px;
+    }
+
+    .recent-game-container-extra {
+        visibility: hidden;
+        height:0px;
+    }
+
+    .recVid {
+        margin-top: 43px;
+    }
+    
+    .recVidTitle {
+        font-size: 23px;
+    }
+
+    .beatRuyVid .thumbnail img {
+        width: 441px;
+        margin-bottom: 10px;
+    }
+
+    .vidInfo {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .beatRuyVid .vidpfp {
+        width: 61px;
+    }
+
+    .beatRuyVid .vidpfp img {
+        width: 61px;
+    }
+
+    .secondary-vid-info .video-title  {
+        font-size: 20px;
+    }
+
+    .secondary-vid-info .content-creator {
+        font-size: 18px;
+    }
+
+    .secondary-vid-info .video-views {
+        font-size: 17px;
+    }
+
+    .trendingContainer {
+        width: 442px;
+        margin:auto;
+        margin-top: 69px;
+        margin-bottom: 69px;
+    }
+    
+    .trending-post-heading {
+        color:#8BEEDD;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top:21px;
+    }
+    
+    .trending-user {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom:0;
+    }
+    
+    .trending-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #DEDEDE;
+        margin-top: 4px;
+        margin-bottom: 0;
+    }
+    
+    .trending-post-text {
+        margin-top: 7px; 
+        font-size: 16px;
+        color: #DEDEDE;
+        margin-bottom: 0;
+    }
+    
+    .viewPostButton button {
+        background: transparent;
+        outline: #8BEEDD solid 3px;
+        width: 145px;
+        height: 44px;
+        border: none;
+        border-radius: 5px;
+        color: #8BEEDD;
+        font-size: 16px;
+        margin-top: 32px;
+        font-weight: bold;
+    }
+
+    .chess-pawn {
+        visibility: hidden;
+        width:0px;
+        height: 0px;
+    }
+
+    .accountSection-home {
+        visibility: hidden;
+        height: 0px;
+        width:0px;
+    }
+
+    /*tablet videos*/
+
+    .videosHead {
+        font-size: 24px;
+    }
+    
+    .searchContainer {
+        width: 440px;
+    }
+    
+    input  {
+        margin-left: 0px;
+    }
+    
+    .search-bar {
+        width: 440px;
+        max-width: 440px;
+    }
+    
+    .vidInfo {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .secondary-vid-info {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    
+    .vidpfp {
+        width: 44px;
+    }
+    
+    .by-and-view {
+        display: flex;
+        flex-direction:  row;
+    }
+    
+    .video-title {
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .content-creator {
+        font-size: 15px;
+        margin-top: 1px;
+        margin-right: 11px;
+    }
+    
+    .video-views {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    
+    .thumbnail {
+        margin-bottom: 9px;
+    }
+    
+    .vidButtons {
+        margin-top: 74px;
+    }
+    
+    .vidButtons button {
+        height:44px;
+        width: 91px;
+    }
+    
+    .vidButtons .popular {
+        margin-right: 12.5px;
+    }
+    
+    .vidButtons .popular:focus {
+        margin-right: 12.5px;
+    }
+    
+    .vidButtons .forYou, .live {
+        margin-left: 12.5px;
+        margin-right: 12.5px;
+    } 
+    
+    .vidButtons .forYou:focus {
+        margin-left: 12.5px;
+        margin-right: 12.5px;
+    }
+    
+    .vidButtons .live:focus {
+        margin-left: 12.5px;
+        margin-right: 12.5px;
+    }
+    
+    .vidButtons .sort:focus {
+        margin-left: 12.5px;
+    }
+    
+    .vidButtons .live img {
+        margin-right: 12.5px;
+    }
+    
+    .vidButtons .sort {
+        margin-left: 12.5px;
+    }
+    
+    .videos-tab {
+        display:grid;
+        grid-template-columns: 400px 363px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .dutchVid .thumbnail img{
+        justify-content: center;
+        margin: 0;
+        display:flex;
+    }
+    
+    .dutchVid, .londonVid, .ruyVid, .stockfishVid, .kidVid, .mosquitoVid {
+        margin-bottom: 38px;
+    }
+
+    .londonVid .thumbnail img{
+        justify-content: center;
+        margin: 0;
+        display:flex;
+    }
+    
+    .ruyVid .thumbnail img{
+        justify-content: center;
+        margin: 0;
+        display:flex;
+    }
+    
+    .stockfishVid .thumbnail img{
+        margin: 0;
+    }
+    
+    .kidVid .thumbnail img{
+        justify-content: center;
+        margin: 0;
+        display:flex;
+    }
+    
+    .mosquitoVid .thumbnail img{
+        justify-content: center;
+        margin: 0;
+        display:flex;
+    }
+
+    .challengesHead {
+        text-align: center;
+    }
+
+    .loadMore {
+        margin-bottom: 63px;
+    }
+
+    .recChallenges {
+        display: grid;
+        grid-template-columns: 165px 256px 157px;
+        justify-content:center;
+    }
+
+    .recChallenges img{
+        width: 152px;
+    }
+
+    .recChallenges p {
+        font-size: 21px;
+    }
+
+    /*tablet forum*/
+
+    .postContainer {
+        width: 774px;
+        height: 282px;
+        padding-top: 19px;
+        padding-right: 121px;
+        padding-left: 71px;
+        margin-bottom: 35px;
+    }
+    
+    .forumHeader {
+        margin-top: 88px;
+        margin-bottom: 52px;
+    }
+    
+    .forumTopButtons {
+        text-align: center;
+        margin-bottom: 76px;
+        margin-top: 56px;
+    }
+    
+    .categoryButton {
+        margin-right: 141px;
+    }
+    
+    .createButton {
+        margin-left: 141px;
+        width: 57px;
+    }
+    
+    .likeDislike {
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .like img {
+        width: 46.57px;
+    }
+
+    .dislike img {
+        width: 46.57px;
+    }
+
+    .comment img {
+        width: 46.57px;
+    }
+
+    .postContainer h4 {
+        font-size: 19px;
+    }
+
+    .postContainer h3 {
+        font-size: 21px;
+    }
+
+    .postContainer p {
+        font-size: 20px;
+    }
+
+    /* tablet news */
+
+    .overlay a {
+        text-decoration: none;
+    }
+    
+    .overlay .news-title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .overlay .newsName {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .newsHeader {
+        text-align: center;
+        margin-bottom: 64px;
+        margin-top: 81px;
+    }
+    
+    .newsHeader h3 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .newsstories {
+        margin-top: 53px;
+    }
+    
+    .newsstories {
+        display: grid;
+        grid-template-columns: 403px 364px;
+        margin-top: 95px;
+    }
+
+    /*tablet account section */
+
+    .accountSection {
+        grid-template-columns: 108px 338px;
+        margin-top: 18px;
+        margin-bottom: 39px;
+    }
+    
+    .accountSection img {
+        margin-top: 68px;
+        width: 119.38px;
+    }
+    
+    .accountButtons button {
+        outline: #8BEEDD solid 4px;
+        width: 171.36px;
+        height: 44px;
+    }
+    
+    .youraccountinfo {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    .youraccountinfo h1 {
+        margin-top:58px;
+        font-size: 38px;
+        margin-bottom: -8px;
+    }
+    
+    .youraccountinfo .joined {
+        margin-top: 12px;
+        font-size: 20px;
+        margin-bottom: 0px
+    }
+    
+    .games-played {
+        font-size: 20px;
+        margin-top: 7px;
+    }
+    
+    .accountButtons {
+        margin-bottom: 62px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .accountButtons .help {
+        margin-right: 49.5px;
+        font-size: 20px;
+    }
+    
+    .accountButtons .settings {
+        margin-left: 49.5px;
+        font-size: 20px;
+    }
+    
+    .accountRatings {
+        grid-template-columns: 277px 233px;
+        margin-bottom: 41px;
+        margin-top: 62px;
+    }
+
+    .accountRatings p {
+        font-size: 20px;
+        margin: auto;
+    }
+    
+    .dailyRating, .rapidRating, .blitzRating, .bulletRating, .lessonsRating, .puzzlesRating {
+        width: 236.6px;
+        height: 79.8px;
+        margin-bottom: 40px;
+        grid-template-columns: 89px 120px;
+    }
+    
+    .dailyRating img, .rapidRating img, .blitzRating img, .bulletRating img,.lessonsRating img, .puzzlesRating img{
+        display:block;
+        margin-top: 6px;
+        margin-left: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dailyRating img {
+        width: 40.57px;
+    }
+
+    .rapidRating img {
+        width: 56.06px;
+    }
+
+    .blitzRating img {
+        width: 38.41px
+    }
+
+    .bulletRating img {
+        width: 74.7px;
+    }
+
+    .lessonsRating img {
+        width: 35.01px;
+    }
+
+    .puzzlesRating img {
+        width: 61.6px;
+    }
+    
+    
+    .recentGames {
+        font-size: 28px;
+        padding-top: 46px;
+        padding-bottom: 38px;
+    }
+    
+    .recent-game-thumb img {
+        width: 115px;
+    }
+
+    .win-loss-icon img {
+        width: 67px;
+    }
+    
+    .viewAll {
+        font-weight: 200;
+    }
+
+    /*friends page*/
+
+    .friendHeader {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .friendsList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .account1 {
+        margin-bottom: 20px;
+        border-radius: 8px;
+        height: 185.28px;
+        width: 777px;
+        grid-template-columns: 188px 162px 489px;
+    }
+
+    .rightSideUp img {
+        width: 133.48px;
+    }
+    
+    .friendInfo {
+        margin: auto;
+    }
+    
+    .rightSideUp {
+        margin: auto;
+    }
+    
+    .msg-play {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .friends-msg-icon img {
+        width: 69.73px;
+    }
+
+    .friends-play-icon img {
+        width: 69.73px;
+    }
+    
+    .friends-play-icon {
+        margin-right: 25px;
+    }
+    
+    .friendInfo h3 {
+        font-size: 25px;
+    }
+    
+    .friendInfo h4 {
+        font-size: 23px;
+        font-weight: 400;
+    }
+
+    /*tablet forum post page*/
+
+    .commentContainer {
+        width: 197px;
+        height: 51px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 52px;
+        margin-top: 14px;
+    }
+    
+    input  {
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        outline: none;
+        padding-left: 16px;
+    }
+    
+    .comment-bar {
+        width: 307px;
+        max-width: 400px;
+        background: #D9D9D9;
+        height: 44px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .commentContainer button {
+        background-color: #252747;
+        outline: none;
+        border: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 44px;
+        width: 59px;
+        margin-left: 18px;
+    }
+    
+    .mainPost {
+        background-color: #252747;
+        width: 441px;
+        height: 282px;
+        border-radius: 13px;
+        padding: 30px;
+        margin-bottom: 35px;
+    }
+
+    .response {
+        width: 441px;
+        height: 181px;
+        padding: 2px;
+        margin-bottom: 35px;
+    }
+
+    .response h4 {
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    
+    .response .likeDislike {
+        display: flex;
+    }
+    
+    .subResponse {
+        background-color: #161834;
+        width: 428px;
+        height: 160px;
+        border-radius: 13px;
+        display: block;
+        margin: auto;
+        padding: 10px;
+        margin-bottom: 35px;
+    }
+    
+    .subResponse h4 {
+        margin-bottom: 0px;
+    }
+
+    .subResponse button {
+        background-color: transparent;
+        border: none;
+    }
+    
+    .mainPost button {
+        background-color: transparent;
+        border: none;
+    }
+    
+    .response button {
+        background-color: transparent;
+        border: none;
+    }
+
+}
+
+/*desktop media query*/
+
+@media (min-width: 1188px) {
+
+    .hamburgerMenu--toggle .bars:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburgerMenu--toggle .bars:nth-child(2) {
+        opacity:0;
+    }
+    
+    .hamburgerMenu--toggle .bars:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .flex-container {
+    height: 120px;
+    }
+
+    .nav--toggle {
+        left: 35% !important;
+    }
+
+    .nav-items {
+    margin-top: 16px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        background-color:#090B0E;
+        font-weight:800;
+        width: 490px;
+        font-size: 20px;
+        height: 948px;
+        position: fixed;
+        top: 114px;
+    }
+    
+    .nav ul {
+        margin-top: 21px;
+        padding-left: 0;
+    }
+    .nav ul :link {
+        text-decoration: none;
+    }
+    
+    .nav-first-three li {
+        margin-bottom: 33px;
+        list-style: none;
+        text-align: left;
+    }
+    
+    .nav-second-three li {
+        margin-bottom: 33px;
+        list-style: none;
+        text-align: left;
+    }
+    
+    .nav-third-three li {
+        margin-bottom: 33px;
+        list-style: none;
+        text-align: left;
+    }
+    
+    nav .logo__img {
+        margin-top: 24px;
+        display:block;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    
+    li img {
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+        float:left;
+        padding-left: 35px;
+        text-align:center;
+    }
+
+    .friends img{
+        width: 52px;
+    }
+
+    .hamburgerMenu {
+        margin-right: 210%;
+    }
+
+    .friends {
+        margin-left: 210%
+    }
+
+    .bars {
+        width: 32px;
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+
+    /*desktop home page*/
+
+    .accountSection-home {
+        visibility: visible;
+        height: 160px;
+        width: 612px;
+        display: grid;
+        grid-template-columns: 103px 180px 74px 133px 74px 103px;
+        margin-bottom: 0px;
+        justify-content: start;
+        margin-left: 5%;
+    }
+
+    .accountSection-home img {
+        margin-top: 60px;
+    }
+
+    .youraccountinfo {
+        margin-left: 30px;
+    }
+    
+    .youraccountinfo-home h1 {
+        margin-top:70px;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: -8px;
+    }
+    
+    .youraccountinfo-home .joined-home {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 0px
+    }
+
+    .your-puzzle-rating-home h1 {
+        font-size: 20px;
+        margin-top: 70px;
+        font-weight: 400;
+    }
+
+    .your-rapid-rating-home h1 {
+        font-size: 20px;
+        margin-top: 70px;
+        font-weight: 400;
+    }
+
+    .gameButtons {
+        display: grid;
+        justify-content: start;
+        grid-template-columns: 200px 250px 200px;
+        margin-top: 72px;
+        margin-left: 5%;
+    }
+
+    .gameButtons button {
+        width: 158px;
+        height: 126px;
+    }
+
+    .dailyGame img {
+        width: 65.43px;
+        margin: auto;
+    }
+    
+    .rapidGame img {
+        width: 75.83px;
+    }
+    
+    .blitzGame img{
+        width: 49.04px;
+    }
+    
+    .bulletGame img{
+        width: 97.98px;
+    }
+    
+    .lessonsGame img {
+        width: 50.8px;
+    }
+    
+    .puzzlesGame img{
+        width: 75.73px;
+    }
+
+    .buttons-and-pawn {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .friendBot {
+        flex-direction: column;
+        margin: 51px 0 45px 5%;
+        text-align: center;
+        justify-content:center;
+    }
+
+    .chess-pawn {
+        visibility: visible;
+        width:160.42px;
+        height: 285.33px;
+        display:flex;
+        margin-left: 5%;
+    }
+
+    .playFriend {
+        outline: #8BEEDD solid 6px;
+        width: 245px;
+        height: 69px;
+        font-size: 20px;
+        margin-right: 0px;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+
+
+    .playBot {
+        outline: #8BEEDD solid 6px;
+        width: 167px;
+        height: 44px;
+        font-size: 20px;
+        margin-left:0px;
+        font-weight: bold;
+        margin-top: 24px;
+    }
+
+    /*desktop home page recent games*/
+
+    .recentGames {
+        background-color:#080912;
+        width: 648px;
+        height: 653px;
+        margin-left: 5%;
+        padding-top: 0px;
+        border-radius: 5px;
+    }
+
+    .recentGames h3 {
+        font-size: 20px;
+        margin-bottom: 31px;
+    }
+
+    .recentGames button {
+        font-size: 20px;
+    }
+
+    .recent-game-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #282547;
+        height: 66px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 17px;
+        border-radius: 5px;
+    }
+
+    .recent-game-container-extra {
+        visibility: visible;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #282547;
+        height: 66px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 17px;
+        border-radius: 5px;
+    }
+    
+    .winner p, .vs p, .loser p {
+        margin:0px;
+        text-align: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+    
+    .win-loss-icon p {
+        font-size: 16px;
+    }
+
+    .recent-game-thumb img {
+        width: 51px;
+    }
+
+    .win-loss-icon img {
+        width: 26px;
+    }
+    
+    /*desktop rec video home page*/
+
+    .recent-games-and-rec-vid {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .rec-vid-and-trending {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+
+    .sepLinesHamburger-trending {
+        display:none;
+    }
+
+    .beatRuyVid .thumbnail img {
+        margin-bottom: 0px;
+    }
+
+    .recVid {
+        background-color:#282547;
+        border-radius: 5px;
+        margin-top: 0px;
+        height: 353px;
+    }
+
+    .recVid .vidpfp img{
+        width: 44px;
+    }
+
+    .beatRuyVid .secondary-vid-info .video-title {
+        font-size: 17px;
+    }
+
+    .beatRuyVid .by-and-view .content-creator {
+        font-size: 15px;
+    }
+
+    .beatRuyVid .by-and-view .video-views{
+        font-size: 12px;
+    }
+
+    .recVidTitle {
+        margin-top: 27px;
+    }
+
+    .beatRuyVid .vidInfo {
+        margin-bottom: 0px;
+        margin-top:0px;
+    }
+
+    .trendingContainer {
+        margin-top: 22px;
+    }
+
+    .beatRuyVid .thumbnail img {
+        width: 367px;
+    }
+
+    .trendingContainer {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+        padding-top: 1px;
+    }
+
+    .trending-post-heading {
+        font-size: 24px;
+        margin-top:12px;
+    }
+
+    /*desktop footer*/
+
+    .footer-container {
+        display: flex;
+        flex-direction:row;
+    }
+
+    .name-and-tagline {
+        justify-content: left;
+        margin-left: 5%;
+    }
+    
+    footer h4 {
+        text-align: left;
+        margin-top: 36px;
+        font-size: 18px;
+    }
+    
+    footer h5 {
+        text-align: left;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .top-and-bottom-footer {
+        display:flex;
+
+    }
+    
+    .bottomlist {
+        display: grid;
+        grid-template-columns:104px 104px;
+        font-size: 14px;
+        font-weight: 100;
+        margin-top:49px;
+    }
+    
+    .toplist {
+        display:grid;
+        grid-template-columns: 95px 95px 103px;
+        font-size: 14px;
+        font-weight:100;
+        margin-top: 49px;
+        margin-left: 89px;
+    }
+    
+    footer img {
+        width: 271px;
+        margin: auto;
+        margin-top: 44px;
+        margin-bottom: 42px;
+    }
+
+    /*desktop search bar*/
+    .searchContainer {
+        width: 698px;
+        height: 51px;
+    }
+    
+    input  {
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        margin: 10px;
+    }
+    
+    .search-bar {
+        width: 698px;
+        max-width: 698px;
+        height: 51px;
+    }
+    
+    .searchContainer button {
+        height: 51px;
+        width: 68px;
+        margin-left: 384px;
+    }
+
+    /*desktop videos*/
+
+    .videos-tab {
+        grid-template-columns: 413px 413px 360px;
+    }
+
+    .loadMore {
+        outline: #8BEEDD solid 5px;
+        width: 231px;
+        height: 51px;
+        font-size: 20px;
+        margin-bottom: 53px;
+    }
+
+    .recChallenges {
+        display: grid;
+        grid-template-columns: 163px 256px 157px;
+        justify-content:center;
+    }
+
+    .vidButtons {
+        margin-top: 49px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .vidButtons button {
+        width: 130px;
+        margin-bottom: 49px;
+        font-size: 18px;
+    }
+    
+    .vidButtons .popular {
+        margin-right: 29.5px;
+    }
+    
+    .vidButtons .popular:focus {
+        margin-right: 29.5px;
+        background-color:#080912;
+    }
+    
+    .vidButtons .forYou, .live {
+        margin-left: 29.5px;
+        margin-right: 29.5px;
+    } 
+    
+    .vidButtons .forYou:focus {
+        margin-left: 29.5px;
+        margin-right: 29.5px;
+        background-color:#080912;
+    }
+    
+    .vidButtons .live:focus {
+        margin-left: 29.5px;
+        margin-right: 29.5px;
+        background-color:#080912;
+    }
+    
+    .vidButtons .sort:focus {
+        margin-left: 29.5px;
+        background-color:#080912;
+    }
+    
+    .vidButtons .live img {
+        margin-right: 8px;
+    }
+    
+    .vidButtons .sort {
+        margin-left: 29.5px;
+    }
+    
+    /*desktop news*/
+    .newsstories {
+        display: grid;
+        grid-template-columns: 396px 395px 378px;
+        margin-top: 95px;
+    }
+
+    /*desktop account info*/
+    .all-account-elements {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .account-info-and-elo {
+        margin-left: 5%;
+    }
+
+    .all-account-elements .sepLinesHamburger {
+        display: none;
+    }
+
+    .accountButtons button {
+        width: 171px;
+        height:70px;
+    }
+
+    .accountSection {
+        margin-top: 0px;
+    }
+
+    .accountSection, .accountButtons {
+        justify-content: left;
+    }
+
+    /*friends section*/
+
+
+    /*forum post desktop*/ 
+    .commentContainer {
+        width: 325px;
+        height: 51px;
+    }
+    
+    input  {
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        margin: auto;
+        outline: none;
+        padding-left: 0px;
+    }
+}
+
+    /*big desktop*/
+    @media (min-width: 1188px) {
+        .nav--toggle {
+            left: 25% !important;
+        }
+    }

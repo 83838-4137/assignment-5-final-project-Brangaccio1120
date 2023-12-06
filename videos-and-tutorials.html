@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Videos and Tutorials</title>
+</head>
+<body>
+    <header class="flex-container">
+        <div class="nav-items">
+            <div class=hamburgerMenu>
+                <div class="bars"></div>
+                <div class="bars"></div>
+                <div class="bars"></div>
+            </div>
+            <h1 class="logo">
+                <a href="index.html"><img src="images/onechess-logo-12.svg" alt="one chess logo" class="logo__img"></a>
+            </h1>
+            <h2 class="friends"><a href="friends.html"><img src="images/friends.svg" alt="friends icon"></a>
+            </h2>
+            <nav class="nav">
+                <a href="index.html"><img src="images/onechess-logo-12.svg" class="logo__img" alt="one chess logo"></a>
+                <div class="sepLineLogo"></div>
+                    <!--I'm separating my links into three lists because that's how they are separated in my figma file-->
+                <div class="nav-first-three">
+                    <ul>
+                        <li><img src="images/online-games.svg" alt="online games icon"><a href="#">Online Games</a></li>
+                         <li class="bot-game-list"><img src="images/bot-games.svg" alt="bot games icon"><a href="#">Bot Games</a></li>
+                        <li><img src="images/puzzles.svg" alt="puzzles icon"><a href="#">Puzzles</a></li>
+                    </ul>
+                </div>
+                <div class="sepLinesHamburger"></div>
+                <div class="nav-second-three">
+                    <ul>
+                        <li><img src="images/videos-tab.svg" alt="videos tab icon"><a href="videos-and-tutorials.html">Videos</a></li> 
+                        <li><img src="images/forums-tab.svg" alt="forums tab icon"><a href="forums.html"><div class="nav-link-text"></div>Forums</a></li>
+                        <li><img src="images/news-tab.svg" alt="new tab icon"><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+                <div class="sepLinesHamburger"></div>
+                <div class="nav-third-three">
+                    <ul>
+                        <li><img src="images/account-icon.svg" alt="account icon"><a href="account.html">Account</a></li> 
+                        <li class="help-list"><img src="images/help-circle.svg" alt="help icon"><a href="#">Help</a></li> 
+                        <li class="sign-out-list"><img src="images/sign-out.svg" alt="sign out icon"><a href="#">Sign Out</a></li> 
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <script src="script.js"></script>
+
+    <h2 class="videosHead">Videos</h2>
+
+    <div class="searchContainer">
+        <form class="search-bar">
+            <input type="text" placeholder="search" name="search" id="search">
+            <button class="search" type="submit"><img src="images/search-icon.svg" alt="search icon"></button>
+        </form>
+    </div>
+
+    <section class="vidButtons">
+        <button class="popular">Popular</button>
+        <button class="forYou">For You</button>
+        <button class="live"><img src="images/live-ellipse.svg" alt="live ellipse">Live</button>
+        <button class="sort">Sort</button>
+    </section>
+
+    <section class="videos-tab">
+
+        <div class="dutchVid">
+            <div class="thumbnail">
+                <img src="images/mobile-videos/dutch-defense.svg" alt="dutch defense video thumbnail">
+            </div>
+            <div class="vidInfo">
+                <div class="vidpfp">
+                    <img src="images/creator-pfp/the-master-pfp.svg" alt="profile picture">
+                </div>
+                <div class="secondary-vid-info">
+                    <p class="video-title">How to Play The Dutch Defense</p>
+                     <div class="by-and-view">
+                         <p class="content-creator">By: TheMaster</p>
+                         <p class="video-views">120 views</p>
+                     </div>
+                </div>
+             </div>
+        </div>
+
+        <div class="londonVid">
+            <div class="thumbnail">
+                <img src="images/mobile-videos/london-system.svg" alt="london system video thumbnail"></div>
+            <div class="vidInfo">
+                <div class="vidpfp">
+                    <img src="images/creator-pfp/chess-brother-pfp.svg" alt="profile picture">
+                </div>
+                <div class="secondary-vid-info">
+                    <p class="video-title">common london traps</p>
+                    <div class="by-and-view">
+                     <p class="content-creator">By: Chessbrother23</p>
+                     <p class="video-views">3k views</p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <div class="ruyVid">   
+            <div class="thumbnail">
+                <img src="images/mobile-videos/ruy-lopez.svg" alt="Ruy lopez video thumbnail">
+            </div>
+            <div class="vidInfo">
+                <div class="vidpfp">
+                    <img src="images/creator-pfp/tom-thumb-pfp.svg" alt="profile picture">
+                </div>
+                <div class="secondary-vid-info">
+                    <p class="video-title">How to Play The Ruy Lopez</p>
+                    <div class="by-and-view">
+                     <p class="content-creator">By: Tom Thumb</p>
+                     <p class="video-views">40 views</p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <div class="stockfishVid">
+            <div class="thumbnail">
+                <img src="images/mobile-videos/stockfish-torch.svg" alt="stockfish versus torch video thumbnail">
+            </div>
+            <div class="vidInfo">
+                <div class="vidpfp">
+                    <img src="images/creator-pfp/chess-daily-pfp.svg" alt="profile picture">
+                </div>
+                <div class="secondary-vid-info">
+                    <p class="video-title">Stockfish V.S Torch</p>
+                    <div class="by-and-view">
+                        <p class="content-creator">By: ChessDaily</p>
+                        <p class="video-views">400 views</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="kidVid">
+            <div class="thumbnail">
+                <img src="images/mobile-videos/kings-indian.svg" alt="kings indian speedrun video thumbnail">
+            </div>
+            <div class="vidInfo">
+                <div class="vidpfp">
+                    <img src="images/creator-pfp/pawnstar-pfp.png" alt="profile picture">
+                </div>
+                <div class="secondary-vid-info">
+                    <p class="video-title">Kings Indian Speedrun</p>
+                    <div class="by-and-view">
+                        <p class="content-creator">By: Pawnstar</p>
+                        <p class="video-views">1.9k views</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mosquitoVid">
+            <div class="thumbnail">
+                <img src="images/mobile-videos/mosquito-gambit.svg" alt="mosquito gambit video thumbnail">
+            </div>
+            <div class="vidInfo">
+                <div class="vidpfp">
+                    <img src="images/creator-pfp/content-god-pfp.svg" alt="profile picture">
+                </div>
+                <div class="secondary-vid-info">
+                    <p class="video-title">Never Play this Opening</p>
+                    <div class="by-and-view">
+                        <p class="content-creator">By: ContentGod</p>
+                        <p class="video-views">8k views</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button class="loadMore">Load More</button>
+
+        <div class="sepLinesHamburger"></div>
+        <h2 class="challengesHead">Recommended Challenges</h2>
+
+    <section class="recChallenges">
+
+        <div class="commonTraps"><a href="#"><img src="images/recommended-challenge-thumbs/common-traps.svg" alt="recommended challenge"></a>
+        <p>common traps</p></div>
+
+        <div class="londonIdeas"><a href="#"><img src="images/recommended-challenge-thumbs/london-ideas.svg" alt="recommended challenge"></a>
+        <p>london ideas</p></div>
+
+        <div class="matingPatterns"><a href="#"><img src="images/recommended-challenge-thumbs/mating-patterns.svg" alt="recommended challenge"></a>
+        <p>mating patterns</p></div>
+
+    </section>
+</body>
+<div class="sepLinesHamburger"></div>
+<footer class="footer-container">
+
+    <div class="name-and-tagline">
+    <h4>ONECHESS</h4>
+
+    <h5>WATCH, LEARN, CONNECT</h5>
+
+    </div>
+    
+    <div class="top-and-bottom-footer"></div>
+    <ul class="toplist">
+        <li>About</li>
+        <li>FAQ</li>
+        <li>Terms of Service</li>
+    </ul>
+
+    <ul class="bottomlist">
+        <li>Privacy</li>
+        <li>Contact Us</li>
+    </ul>
+
+    <img src="images/footer-socials.svg" alt="all social media icons">
+</footer>
+</body>
+</html>
